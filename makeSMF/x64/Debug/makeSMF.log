@@ -1,1 +1,3 @@
-﻿  makeSMF.vcxproj -> C:\Users\Retasu\source\repos\makeSMF\x64\Debug\makeSMF.exe
+﻿  makeSMF.cpp
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\makeSMF.cpp(25,35): warning C4244:  '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+  makeSMF.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe
