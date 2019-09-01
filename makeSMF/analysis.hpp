@@ -24,10 +24,10 @@ class Analysis
 		//int default_color;
 
 	public:
-
 		
+		Analysis();
 		void Set_Coodinates();
-
+		void Analyze();
 
 };
 

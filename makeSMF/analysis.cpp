@@ -1,5 +1,10 @@
 #include "Analysis.hpp"
 
+Analysis::Analysis()
+{
+	this->Set_Coodinates();
+}
+
 void Analysis::Set_Coodinates()
 {
 
@@ -16,8 +21,28 @@ void Analysis::Set_Coodinates()
 
 		//black
 
+		this->key_black_y = 620;
 
+		for (int i = 0; i < 36; i++) {
+			
+		}
 
 	}
 
+}
+
+void Analysis::Analyze()
+{
+
+	cv::namedWindow("movie", cv::WINDOW_AUTOSIZE);
+
+	double fps = movie.Get_FPS();
+
+	cv::Mat frame;
+	for (;;) {
+		frame = movie.Get_Next_Frame();
+		if (frame.empty()) break;
+		cv::imshow("movie", frame);
+		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
+	}
 }
