@@ -8,14 +8,14 @@
 
 #include "Movie.hpp"
 
-class analysis
+class Analysis
 {
 
 	private:
 		int key_white_x[52];
-		int key_white_y[52];
+		int key_white_y;
 		int key_black_x[36];
-		int key_black_y[36];
+		int key_black_y;
 
 		bool key_flag[88];
 
@@ -25,6 +25,7 @@ class analysis
 
 	public:
 
+		
 		void Set_Coodinates();
 
 

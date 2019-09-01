@@ -7,6 +7,13 @@ Movie::Movie()
 	this->set.Set_Prog(cap.get(CAP_PROP_FRAME_WIDTH));
 	this->max_frame = cap.get(CAP_PROP_FRAME_COUNT);
 
+	//ここでオフセット分飛ばす
+	for (int i = 0; i < this->Get_FPS()*this->Get_Set().Get_Offset(); i++) {
+		if (cur_frame_num < max_frame) {
+			cap >> img;
+		}
+	}
+
 }
 
 Movie::~Movie()
