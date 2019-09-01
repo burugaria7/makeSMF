@@ -6,6 +6,7 @@ Setting::Setting()
 	this->input_path = "C:\\Users\\Retasu\\Documents\\Github\\makeSMF\\videos\\cho720.mp4";
 	this->offset = 3;//‚Æ‚è‚ ‚¦‚¸(s)A(ms)‚É‚·‚é‚©‚à
 	this->resolution = 5;
+	this->mode = 2;
 }
 
 Setting::Setting(string path, int offset, int resol)
