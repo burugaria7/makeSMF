@@ -40,6 +40,10 @@ class Movie
 			return this->cur_frame_num;
 		}
 
+		inline Setting Get_Set() {
+			return set;
+		}
+
 
 };
 

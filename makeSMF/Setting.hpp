@@ -16,6 +16,17 @@ class Setting
 		int offset = 0; //まんまオフセット
 		int progressive; //480p 720p 1080p とかとか
 		int resolution; //分解能
+		//int key;//鍵盤数
+
+		/*	
+		mode番号-内容
+		0-manual 画像を表示してクリックで設定
+		1-480 88
+		2-720 88
+		3-1080 88
+		などよくある設定を作成
+		*/
+		int mode; 
 
 	public:
 		Setting();
@@ -40,6 +51,10 @@ class Setting
 
 		inline void Set_Prog(int prog) {
 			this->progressive = prog;
+		}
+
+		inline int Get_Mode() {
+			return this->mode;
 		}
 };
 

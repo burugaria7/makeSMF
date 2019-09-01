@@ -3,6 +3,7 @@
 Movie::Movie()
 {
 	this->cap.open(this->set.Get_Input_Path());
+	//オープンできたかのチェック処理書いてね
 	this->set.Set_Prog(cap.get(CAP_PROP_FRAME_WIDTH));
 	this->max_frame = cap.get(CAP_PROP_FRAME_COUNT);
 
