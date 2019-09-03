@@ -130,7 +130,26 @@ void Analysis::Check_Coodinates()
 	cv::waitKey(0);
 }
 
-bool Analysis::Change_color(int b, int g, int r)
+bool Analysis::Change_Color_w(int sum)
 {
-	return false;
+	int def_sum = def_w_clrB + def_w_clrG + def_w_clrR;
+
+	if (abs(sum - def_sum) > 30) { //ここの値は調整してね
+		return true;//色が変わってるね！
+	}else{
+		return false;
+	}
+}
+
+bool Analysis::Change_Color_b(int sum)
+{
+
+	int def_sum = def_b_clrB + def_b_clrG + def_b_clrR;
+
+	if (abs(sum - def_sum) > 30) { //ここの値は調整してね
+		return true;//色が変わってるね！
+	}
+	else {
+		return false;
+	}
 }

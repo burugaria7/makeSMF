@@ -3,6 +3,8 @@
 #ifndef ANALYSIS_HPP
 #define	ANALYSIS_HPP
 
+#include <stdlib.h>
+
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 
@@ -45,7 +47,8 @@ class Analysis
 
 		//明らかに色が変わったかチェックする
 		//明らかに色が変わっていたらtrue
-		bool Change_color(int b,int g,int r);
+		bool Change_Color_w(int sum);
+		bool Change_Color_b(int sum);
 
 };
 
