@@ -5,6 +5,7 @@ Analysis::Analysis()
 
 	cout << "Analysisコンストラクタ呼び出し" << endl;
 	this->Set_Coodinates();
+	this->Set_Color();
 
 }
 
@@ -59,10 +60,24 @@ void Analysis::Set_Coodinates()
 			this->key_black_x[i] = def;
 		}
 	}
+	this->Check_Coodinates();
 }
 
 void Analysis::Set_Color()
 {
+	cout << "Set_Color() デフォルトカラー取得関数" << endl;
+
+	this->def_w_clrB = frame.at<Vec3b>(key_white_y, key_white_x[0])[0];
+	this->def_w_clrG = frame.at<Vec3b>(key_white_y, key_white_x[0])[1];
+	this->def_w_clrR = frame.at<Vec3b>(key_white_y, key_white_x[0])[2];
+
+	this->def_b_clrB = frame.at<Vec3b>(key_black_y, key_black_x[0])[0];
+	this->def_b_clrG = frame.at<Vec3b>(key_black_y, key_black_x[0])[1];
+	this->def_b_clrR = frame.at<Vec3b>(key_black_y, key_black_x[0])[2];
+
+	cout << def_w_clrB << "," << def_w_clrG << "," << def_w_clrR << endl;
+	cout << def_b_clrB << "," << def_b_clrG << "," << def_b_clrR << endl;
+
 }
 
 void Analysis::Analyze()
@@ -113,4 +128,9 @@ void Analysis::Check_Coodinates()
 	cv::imshow("movie", frame);
 
 	cv::waitKey(0);
+}
+
+bool Analysis::Change_color(int b, int g, int r)
+{
+	return false;
 }

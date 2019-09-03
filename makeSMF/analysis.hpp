@@ -26,9 +26,13 @@ class Analysis
 
 		cv::Mat frame;
 
-		int def_clr_B;
-		int def_clr_G;
-		int def_clr_R;
+		int def_w_clrB;
+		int def_w_clrG;
+		int def_w_clrR;
+
+		int def_b_clrB;
+		int def_b_clrG;
+		int def_b_clrR;
 
 
 	public:
@@ -38,6 +42,10 @@ class Analysis
 		void Set_Color();
 		void Analyze();
 		void Check_Coodinates();
+
+		//明らかに色が変わったかチェックする
+		//明らかに色が変わっていたらtrue
+		bool Change_color(int b,int g,int r);
 
 };
 
