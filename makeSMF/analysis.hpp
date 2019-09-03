@@ -24,13 +24,20 @@ class Analysis
 
 		Movie movie;
 
-		//int default_color;
+		cv::Mat frame;
+
+		int def_clr_B;
+		int def_clr_G;
+		int def_clr_R;
+
 
 	public:
 		
 		Analysis();
 		void Set_Coodinates();
+		void Set_Color();
 		void Analyze();
+		void Check_Coodinates();
 
 };
 

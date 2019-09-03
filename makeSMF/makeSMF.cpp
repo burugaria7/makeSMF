@@ -13,6 +13,8 @@ int main()
 
 	Analysis analysis;
 
+	analysis.Check_Coodinates();
+
 	analysis.Analyze();
 	
 }

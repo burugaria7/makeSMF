@@ -11,7 +11,7 @@ Analysis::Analysis()
 void Analysis::Set_Coodinates()
 {
 
-	cout << "座標セット" << endl;
+	cout << "Set_Coodinates() 座標セット関数" << endl;
 
 	//720p 88key
 	if (movie.Get_Set().Get_Mode() == 2) {
@@ -61,16 +61,45 @@ void Analysis::Set_Coodinates()
 	}
 }
 
+void Analysis::Set_Color()
+{
+}
+
 void Analysis::Analyze()
 {
+
+	//cv::namedWindow("movie", cv::WINDOW_AUTOSIZE);
+
+	double fps = movie.Get_FPS();
+
+	//cv::Mat frame;
+
+	//frame = movie.Get_Next_Frame();
+	
+	//cv::imshow("movie", frame);
+
+	//cv::waitKey(0);
+	//waitKey();
+
+	/*for (;;) {
+		frame = movie.Get_Next_Frame();
+		if (frame.empty()) break;
+		cv::imshow("movie", frame);
+		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
+	}*/
+}
+
+void Analysis::Check_Coodinates()
+{
+
+	cout << "Check_Coodinates() 座標チェック関数" << endl;
 
 	cv::namedWindow("movie", cv::WINDOW_AUTOSIZE);
 
 	double fps = movie.Get_FPS();
 
-	cv::Mat frame;
 	frame = movie.Get_Next_Frame();
-	
+
 	for (const auto& e : this->key_white_x) {
 		cout << e << endl;
 		cv::circle(frame, cv::Point(e, this->key_white_y), 3, cv::Scalar(0, 0, 200), 3, 4);
@@ -80,16 +109,8 @@ void Analysis::Analyze()
 		cout << e << endl;
 		cv::circle(frame, cv::Point(e, this->key_black_y), 3, cv::Scalar(0, 200, 0), 3, 4);
 	}
-	
+
 	cv::imshow("movie", frame);
 
 	cv::waitKey(0);
-	//waitKey();
-
-	/*for (;;) {
-		frame = movie.Get_Next_Frame();
-		if (frame.empty()) break;
-		cv::imshow("movie", frame);
-		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
-	}*/
 }
