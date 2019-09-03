@@ -22,7 +22,7 @@ class Analysis
 		int key_black_x[36];
 		int key_black_y;
 
-		bool key_flag[88];
+		//bool key_flag[88];
 
 		Movie movie;
 
@@ -35,6 +35,8 @@ class Analysis
 		int def_b_clrB;
 		int def_b_clrG;
 		int def_b_clrR;
+
+		bool key_event[88];
 
 
 	public:
@@ -49,6 +51,9 @@ class Analysis
 		//–¾‚ç‚©‚ÉF‚ª•Ï‚í‚Á‚Ä‚¢‚½‚çtrue
 		bool Change_Color_w(int sum);
 		bool Change_Color_b(int sum);
+
+		void Check_Key();
+		int Get_Color_Sum(int x,int y);
 
 };
 
