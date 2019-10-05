@@ -124,23 +124,27 @@ void Analysis::Check_Coodinates()
 	cv::waitKey(0);
 }
 
-bool Analysis::Change_Color_w(int sum)
+bool Analysis::Change_Color_w(int b, int g, int r)
 {
-	int def_sum = def_w_clrB + def_w_clrG + def_w_clrR;
+	int diff = abs(b - def_w_clrB)
+		+ abs(g - def_w_clrG)
+		+ abs(r - def_w_clrR);
 
-	if (abs(sum - def_sum) > 100) { //ここの値は調整してね
+	if (diff > 50) { //ここの値は調整してね
 		return true;//色が変わってるね！
 	}else{
 		return false;
 	}
 }
 
-bool Analysis::Change_Color_b(int sum)
+bool Analysis::Change_Color_b(int b, int g, int r)
 {
 
-	int def_sum = def_b_clrB + def_b_clrG + def_b_clrR;
+	int diff = abs(b - def_b_clrB)
+		+ abs(g - def_b_clrG)
+		+ abs(r - def_b_clrR);
 
-	if (abs(sum - def_sum) > 100) { //ここの値は調整してね
+	if (diff > 50) { //ここの値は調整してね
 		return true;//色が変わってるね！
 	}
 	else {
@@ -159,12 +163,19 @@ void Analysis::Check_Key()
 	y = key_white_y;
 
 	if (this->key_event[31] == false) {
-		if (Change_Color_w(Get_Color_Sum(x, y))){
+		if (Change_Color_w(
+			Get_Color_b(x, y),
+			Get_Color_g(x, y), 
+			Get_Color_r(x, y)))
+		{
 			cout <<"C5 on"<<endl;
 			key_event[31] = true;
 		}
 	}else {
-		if (!Change_Color_w(Get_Color_Sum(x, y))) {
+		if (!Change_Color_w(
+			Get_Color_b(x, y),
+			Get_Color_g(x, y),
+			Get_Color_r(x, y))) {
 			cout << "C5 off" << endl;
 			key_event[31] = false;
 		}
@@ -172,10 +183,22 @@ void Analysis::Check_Key()
 
 }
 
-int Analysis::Get_Color_Sum(int x, int y)
+int Analysis::Get_Color_b(int x, int y)
 {
 	int b = frame.at<Vec3b>(y, x)[0];
+	
+	return b;
+}
+
+int Analysis::Get_Color_g(int x, int y)
+{
 	int g = frame.at<Vec3b>(y, x)[1];
+	
+	return g;
+}
+
+int Analysis::Get_Color_r(int x, int y)
+{
 	int r = frame.at<Vec3b>(y, x)[2];
-	return b + g + r;
+	return r;
 }

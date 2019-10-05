@@ -49,11 +49,13 @@ class Analysis
 
 		//明らかに色が変わったかチェックする
 		//明らかに色が変わっていたらtrue
-		bool Change_Color_w(int sum);
-		bool Change_Color_b(int sum);
+		bool Change_Color_w(int b,int g,int r);
+		bool Change_Color_b(int b, int g, int r);
 
 		void Check_Key();
-		int Get_Color_Sum(int x,int y);
+		int Get_Color_b(int x,int y);
+		int Get_Color_g(int x, int y);
+		int Get_Color_r(int x, int y);
 
 };
 
