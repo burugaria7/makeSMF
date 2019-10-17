@@ -22,6 +22,8 @@ class Analysis
 		int key_black_x[36];
 		int key_black_y;
 
+		int key_x[89];
+
 		//bool key_flag[88];
 
 		Movie movie;
@@ -36,7 +38,12 @@ class Analysis
 		int def_b_clrG;
 		int def_b_clrR;
 
+		bool key_w_event[52];
+		bool key_b_event[36];
+
 		bool key_event[88];
+
+		bool key_active[88];
 
 
 	public:
@@ -56,6 +63,8 @@ class Analysis
 		int Get_Color_b(int x,int y);
 		int Get_Color_g(int x, int y);
 		int Get_Color_r(int x, int y);
+
+		bool True_White(int n);
 
 };
 

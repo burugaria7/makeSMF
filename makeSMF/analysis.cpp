@@ -7,10 +7,15 @@ Analysis::Analysis()
 	this->Set_Coodinates();
 	this->Set_Color();
 
+	for (int i = 0; i < 52; i++) {
+		this->key_w_event[i] = false;
+	}
+	for (int i = 0; i < 36; i++) {
+		this->key_b_event[i] = false;
+	}
 	for (int i = 0; i < 88; i++) {
 		this->key_event[i] = false;
 	}
-
 }
 
 void Analysis::Set_Coodinates()
@@ -64,6 +69,21 @@ void Analysis::Set_Coodinates()
 			this->key_black_x[i] = def;
 		}
 	}
+
+	int num = 0;
+	int white = 0;
+	int black = 0;
+	for (;num < 89;num++) {
+		if (this->True_White(num)) {
+			key_x[num] = key_white_x[white];
+			white++;
+		}
+		else {
+			key_x[num] = key_black_x[black];
+			black++;
+		}
+	}
+
 	this->Check_Coodinates();
 }
 
@@ -119,6 +139,11 @@ void Analysis::Check_Coodinates()
 		cv::circle(frame, cv::Point(e, this->key_black_y), 3, cv::Scalar(0, 200, 0), 3, 4);
 	}
 
+	for (const auto& e : this->key_x) {
+		cout << e << endl;
+		cv::circle(frame, cv::Point(e, this->key_black_y + 30), 3, cv::Scalar(200, 0, 0), 3, 4);
+	}
+
 	cv::imshow("movie", frame);
 
 	cv::waitKey(0);
@@ -155,45 +180,66 @@ bool Analysis::Change_Color_b(int b, int g, int r)
 void Analysis::Check_Key()
 {
 
-	int x, y;
+	int x, y, key;
 
-	//C5_31_W
-
-	x = key_white_x[31];
-	y = key_white_y;
-
-	if (this->key_event[31] == false) {
-		if (Change_Color_w(
-			Get_Color_b(x, y),
-			Get_Color_g(x, y), 
-			Get_Color_r(x, y)))
-		{
-			cout <<"C5 on"<<endl;
-			key_event[31] = true;
+	for (key = 0; key < 88; key++) {
+		x = key_x[key];
+		if (True_White(key)) {
+			y = key_white_y;
+			if (this->key_event[key] == false) {
+				if (Change_Color_w(
+					Get_Color_b(x, y),
+					Get_Color_g(x, y),
+					Get_Color_r(x, y)))
+				{
+					cout << key << " on" << endl;
+					key_event[key] = true;
+				}
+			}
+			else {
+				if (!Change_Color_w(
+					Get_Color_b(x, y),
+					Get_Color_g(x, y),
+					Get_Color_r(x, y))) {
+					cout << key << " off" << endl;
+					key_event[key] = false;
+				}
+			}
 		}
-	}else {
-		if (!Change_Color_w(
-			Get_Color_b(x, y),
-			Get_Color_g(x, y),
-			Get_Color_r(x, y))) {
-			cout << "C5 off" << endl;
-			key_event[31] = false;
+		else {
+			y = key_black_y;
+			if (this->key_event[key] == false) {
+				if (Change_Color_b(
+					Get_Color_b(x, y),
+					Get_Color_g(x, y),
+					Get_Color_r(x, y)))
+				{
+					cout << key << " on" << endl;
+					key_event[key] = true;
+				}
+			}
+			else {
+				if (!Change_Color_b(
+					Get_Color_b(x, y),
+					Get_Color_g(x, y),
+					Get_Color_r(x, y))) {
+					cout << key << " off" << endl;
+					key_event[key] = false;
+				}
+			}
 		}
 	}
-
 }
 
 int Analysis::Get_Color_b(int x, int y)
 {
 	int b = frame.at<Vec3b>(y, x)[0];
-	
 	return b;
 }
 
 int Analysis::Get_Color_g(int x, int y)
 {
 	int g = frame.at<Vec3b>(y, x)[1];
-	
 	return g;
 }
 
@@ -201,4 +247,40 @@ int Analysis::Get_Color_r(int x, int y)
 {
 	int r = frame.at<Vec3b>(y, x)[2];
 	return r;
+}
+
+bool Analysis::True_White(int n)
+{
+	n += 12;
+	int a = n % 12;
+	switch (a)
+	{
+	case 0:
+		return true;
+	case 1:
+		return false;
+	case 2:
+		return true;
+	case 3:
+		return false;
+	case 4:
+		return true;
+	case 5:
+		return true;
+	case 6:
+		return false;
+	case 7:
+		return true;
+	case 8:
+		return false;
+	case 9:
+		return true;
+	case 10:
+		return false;
+	case 11:
+		return true;
+
+	default:
+		break;
+	}
 }
