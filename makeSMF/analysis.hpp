@@ -11,7 +11,10 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+#include <MIDIData.h>
+
 #include "Movie.hpp"
+#include "MidiController.hpp"
 
 class Analysis
 {
@@ -27,6 +30,7 @@ class Analysis
 		//bool key_flag[88];
 
 		Movie movie;
+		MidiController Mid;
 
 		cv::Mat frame;
 
@@ -69,4 +73,4 @@ class Analysis
 };
 
 
-#endif //ANALYSIS_HPP
+#endif ANALYSIS_HPP

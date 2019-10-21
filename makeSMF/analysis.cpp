@@ -1,5 +1,6 @@
 #include "Analysis.hpp"
 
+
 Analysis::Analysis()
 {
 
@@ -77,10 +78,12 @@ void Analysis::Set_Coodinates()
 		if (this->True_White(num)) {
 			key_x[num] = key_white_x[white];
 			white++;
+			cout << "white" << endl;
 		}
 		else {
 			key_x[num] = key_black_x[black];
 			black++;
+			cout << "black" << endl;
 		}
 	}
 
