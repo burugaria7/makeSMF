@@ -2,34 +2,33 @@
 
 MidiController::MidiController()
 {
-	pMIDIData = MIDIData_Create(MIDIDATA_FORMAT0, 1, MIDIDATA_TPQNBASE, 120);
-	if (pMIDIData == NULL) {
-		printf("MIDIデータの生成に失敗しました。\n");
-		
-	}
-	/* 最初のトラックへのポインタを取得 */
-	pMIDITrack = MIDIData_GetFirstTrack(pMIDIData);
-
-	const wchar_t wch[1] = { 'a'};
-
-	/* イベントを挿入 */
-	MIDITrack_InsertTrackName(pMIDITrack, 0, wch); /* タイトル */
-	MIDITrack_InsertTempo(pMIDITrack, 0, 60000000 / 120); /* 120BPM */
-	MIDITrack_InsertProgramChange(pMIDITrack, 0, 0, 0); /* Piano1 */
-
-
+	midifile.addTimbre(track, 0, channel, instr);
 }
 
 MidiController::~MidiController()
 {
-	/* エンドオブトラックイベントを挿入 */
-	MIDITrack_InsertEndofTrack(pMIDITrack, 1920);
+	midifile.sortTracks();  // Need to sort tracks since added events are
+						   // appended to track in random tick order.
+	string filename = "smf.mid";
+	if (filename.empty()) {
+		//options.getBoolean("hex")
+		if (true) midifile.writeHex(cout);
+		else cout << midifile;
+	}
+	else
+		midifile.write(filename);
+}
 
-	const wchar_t wch[5] = {'a','.','m','i','d'};
+void MidiController::noteOn(int time, int key)
+{
+	midifile.addNoteOn(track, time, channel, key, 0);
+}
 
-	/* MIDIデータを保存 */
-	MIDIData_SaveAsSMF(pMIDIData, wch);
-	/* MIDIデータをメモリ上から削除 */
-	MIDIData_Delete(pMIDIData);
-	pMIDIData = NULL;
+void MidiController::noteOff(int time, int key)
+{
+	midifile.addNoteOff(track, time, channel, key);
+}
+
+void MidiController::test()
+{
 }

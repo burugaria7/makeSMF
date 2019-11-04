@@ -11,7 +11,6 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include <MIDIData.h>
 
 #include "Movie.hpp"
 #include "MidiController.hpp"
@@ -26,6 +25,8 @@ class Analysis
 		int key_black_y;
 
 		int key_x[89];
+
+		int f_count = 0; //フレームカウント
 
 		//bool key_flag[88];
 

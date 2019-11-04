@@ -116,9 +116,13 @@ void Analysis::Analyze()
 		
 		if (frame.empty()) break;
 		this->Check_Key();
+		this->f_count++;
 		cv::imshow("movie", frame);
 		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
+
+
+
 }
 
 void Analysis::Check_Coodinates()

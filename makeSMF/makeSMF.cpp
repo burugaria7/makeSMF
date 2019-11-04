@@ -4,6 +4,7 @@
 #include <string> 
 
 #include "Analysis.hpp";
+//#include "MidiController.hpp"
 
 using namespace cv;
 using namespace std;
@@ -12,9 +13,15 @@ int main()
 {
 
 	Analysis analysis;
+	//MidiController mid;
 
-	//analysis.Check_Coodinates();
+
+
+	analysis.Check_Coodinates();
 
 	analysis.Analyze();
+
+	//mid.test();
+	//mid.~MidiController();
 	
 }
