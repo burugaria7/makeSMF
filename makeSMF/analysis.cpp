@@ -113,16 +113,12 @@ void Analysis::Analyze()
 	double fps = movie.Get_FPS();
 
 	for (;;frame = movie.Get_Next_Frame()) {
-		
 		if (frame.empty()) break;
 		this->Check_Key();
 		this->f_count++;
 		cv::imshow("movie", frame);
 		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
-
-
-
 }
 
 void Analysis::Check_Coodinates()
@@ -188,6 +184,7 @@ void Analysis::Check_Key()
 {
 
 	int x, y, key;
+	int time = 0;
 
 	for (key = 0; key < 88; key++) {
 		x = key_x[key];
@@ -199,6 +196,7 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
+					Mid.noteOn(time,key);
 					cout << key << " on" << endl;
 					key_event[key] = true;
 				}
@@ -208,6 +206,7 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
+					Mid.noteOff(time, key);
 					cout << key << " off" << endl;
 					key_event[key] = false;
 				}
@@ -221,6 +220,7 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
+					Mid.noteOn(time, key);
 					cout << key << " on" << endl;
 					key_event[key] = true;
 				}
@@ -230,6 +230,7 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
+					Mid.noteOff(time, key);
 					cout << key << " off" << endl;
 					key_event[key] = false;
 				}

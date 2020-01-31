@@ -1,0 +1,6 @@
+﻿  Analysis.cpp
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.hpp(32,18): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Analysis.cpp(37,40): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Analysis.cpp(120,35): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Analysis.cpp(292): warning C4715: 'Analysis::True_White': 値を返さないコントロール パスがあります。
+opencv_world411d.lib(opencv_world411d.dll) : fatal error LNK1112: モジュールのコンピューターの種類 'x64' は対象コンピューターの種類 'x86' と競合しています。
