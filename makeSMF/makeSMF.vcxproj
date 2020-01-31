@@ -157,7 +157,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="analysis.cpp" />
     <ClCompile Include="makeSMF.cpp" />
+    <ClCompile Include="MidiController.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="Setting.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="analysis.hpp" />
+    <ClInclude Include="MidiController.hpp" />
+    <ClInclude Include="Movie.hpp" />
+    <ClInclude Include="Setting.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

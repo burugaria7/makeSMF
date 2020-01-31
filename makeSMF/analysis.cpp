@@ -110,15 +110,46 @@ void Analysis::Set_Color()
 void Analysis::Analyze()
 {
 
-	double fps = movie.Get_FPS();
+	const static double fps = movie.Get_FPS();
+
+	int frame_count = 1;
 
 	for (;;frame = movie.Get_Next_Frame()) {
+
 		
 		if (frame.empty()) break;
-		this->Check_Key();
+
+		this->Check_Key();//ここでキーイベントをアップデート
+
+
+		double buf =((double)frame_count / fps);
+
+
+		//同時発音数が一定以下でイベント本登録
+		if (str.size() > 0&&str.size() < 30) { 
+
+			cout << std::to_string(buf) << endl;
+
+			this->str_ += std::to_string(buf);
+			this->str_ += "ms";
+			this->str_ += str;
+			this->str_ += "\n";
+			//cout << str.size() << endl;;
+		}
+
+		str = "";
+
+		frame_count++;
+		this->first_key = 0;
+		this->active_key_sum = 0;
 		cv::imshow("movie", frame);
+
+
 		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
+
+	//最後にファイルに書き出し
+	this->Output_txt();
 }
 
 void Analysis::Check_Coodinates()
@@ -158,7 +189,7 @@ bool Analysis::Change_Color_w(int b, int g, int r)
 		+ abs(g - def_w_clrG)
 		+ abs(r - def_w_clrR);
 
-	if (diff > 50) { //ここの値は調整してね
+	if (diff > threshold) { 
 		return true;//色が変わってるね！
 	}else{
 		return false;
@@ -172,7 +203,7 @@ bool Analysis::Change_Color_b(int b, int g, int r)
 		+ abs(g - def_b_clrG)
 		+ abs(r - def_b_clrR);
 
-	if (diff > 50) { //ここの値は調整してね
+	if (diff > threshold) { 
 		return true;//色が変わってるね！
 	}
 	else {
@@ -195,8 +226,10 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					cout << key << " on" << endl;
+					cout << "[" << key << ":on]" << endl;
+					this->Register_Event(key);
 					key_event[key] = true;
+					
 				}
 			}
 			else {
@@ -204,7 +237,8 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					cout << key << " off" << endl;
+					cout << "[" << key << ":off]" << endl;
+					this->Register_Event(key);
 					key_event[key] = false;
 				}
 			}
@@ -217,7 +251,8 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					cout << key << " on" << endl;
+					cout << "[" << key << ":on]" << endl;
+					this->Register_Event(key);
 					key_event[key] = true;
 				}
 			}
@@ -226,7 +261,8 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					cout << key << " off" << endl;
+					cout << "[" << key << ":off]" << endl;
+					this->Register_Event(key);
 					key_event[key] = false;
 				}
 			}
@@ -287,3 +323,26 @@ bool Analysis::True_White(int n)
 		break;
 	}
 }
+
+void Analysis::Register_Event(int key)
+{
+
+	//cout << "BBBBBBBBB" << endl;
+	//cout << "Register_Event呼び出し" << endl;
+
+
+	std::ostringstream key_;
+	key_ << key;
+
+	str += key_.str();
+	str += ",";
+	this->active_key_sum++;
+}
+
+void Analysis::Output_txt()
+{
+	ofstream outputfile("output.txt");
+	outputfile << str_;
+	outputfile.close();
+}
+

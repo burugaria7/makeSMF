@@ -4,6 +4,11 @@
 #define	ANALYSIS_HPP
 
 #include <stdlib.h>
+#include<fstream>
+#include<string>
+#include <iostream>
+#include <sstream>
+
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
@@ -11,15 +16,25 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include <MIDIData.h>
+//#include <MIDIData.h>
 
 #include "Movie.hpp"
-#include "MidiController.hpp"
+//#include "MidiController.hpp"
+
+using namespace std;
 
 class Analysis
 {
 
 	private:
+
+		//色がどれくらい変わったら変化したと
+		//認識するか
+		const static int threshold = 50;
+
+
+		std::ostringstream pos_msec;
+
 		int key_white_x[52];
 		int key_white_y;
 		int key_black_x[36];
@@ -27,10 +42,17 @@ class Analysis
 
 		int key_x[89];
 
-		//bool key_flag[88];
+
+		//画面変更の時のご検知対策
+		//変化量が多すぎると、
+		//書き出ししない
+		//フラグみたいな使い方
+		int active_key_sum = 0;
+
+		int first_key = 0;
+
 
 		Movie movie;
-		MidiController Mid;
 
 		cv::Mat frame;
 
@@ -48,6 +70,14 @@ class Analysis
 		bool key_event[88];
 
 		bool key_active[88];
+
+		//１フレーム分を保持
+		string str = "";
+
+		//その1フレーム分に問題がなければ、
+		//書き込み
+		string str_ = "";
+		
 
 
 	public:
@@ -69,6 +99,10 @@ class Analysis
 		int Get_Color_r(int x, int y);
 
 		bool True_White(int n);
+
+		void Register_Event(int key);
+
+		void Output_txt();
 
 };
 
