@@ -1,16 +1,11 @@
 ﻿  analysis.cpp
 C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.hpp(32,18): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(37,40): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(44,26): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(53,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(56,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(59,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(62,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(65,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
-  makeSMF.cpp
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(151,35): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\makeSMF.cpp(6,10): warning C4067: プリプロセッサ ディレクティブの後に余分な文字がありました - 改行が必要です
-  コードを生成中...
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.hpp(32,18): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(340): warning C4715: 'Analysis::True_White': 値を返さないコントロール パスがあります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(39,40): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(46,26): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(55,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(58,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(61,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(64,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(67,12): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\analysis.cpp(342): warning C4715: 'Analysis::True_White': 値を返さないコントロール パスがあります。
   makeSMF.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe
