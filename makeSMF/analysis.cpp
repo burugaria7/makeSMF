@@ -41,12 +41,12 @@ void Analysis::Set_Coodinates()
 
 		this->key_black_y = 620;
 
-		this->key_black_x[0] = 27;
+		this->key_black_x[0] = 28.5;
 
 		int k = 0;
 		int def = 27;
-		#define W_1 43;
-		#define W_2 29;
+		#define W_1 43.2;
+		#define W_2 29.3;
 		for (int i = 1; i < 36; i++) {
 			switch (k){
 			case 0:
@@ -74,18 +74,24 @@ void Analysis::Set_Coodinates()
 	int num = 0;
 	int white = 0;
 	int black = 0;
-	for (;num < 89;num++) {
+	for (;num < 88;num++) {
 		if (this->True_White(num)) {
 			key_x[num] = key_white_x[white];
 			white++;
-			cout << "white" << endl;
+			cout << num <<"w";
 		}
 		else {
 			key_x[num] = key_black_x[black];
 			black++;
-			cout << "black" << endl;
+			cout << num<< "b";
 		}
 	}
+
+	cout << "" << endl;
+
+	sort(key_x, key_x + 88);
+
+
 
 	this->Check_Coodinates();
 }
@@ -115,22 +121,19 @@ void Analysis::Analyze()
 	int frame_count = 1;
 
 	for (;;frame = movie.Get_Next_Frame()) {
-
 		
 		if (frame.empty()) break;
 
 		this->Check_Key();//ここでキーイベントをアップデート
 
-
-		double buf =((double)frame_count / fps);
-
+		double time_now =((double)frame_count / fps);
 
 		//同時発音数が一定以下でイベント本登録
 		if (str.size() > 0&&str.size() < 30) { 
 
-			cout << std::to_string(buf) << endl;
+			cout << std::to_string(time_now) << endl;
 
-			this->str_ += std::to_string(buf);
+			this->str_ += std::to_string(time_now);
 			this->str_ += "ms";
 			this->str_ += str;
 			this->str_ += "\n";
@@ -173,9 +176,11 @@ void Analysis::Check_Coodinates()
 		cv::circle(frame, cv::Point(e, this->key_black_y), 3, cv::Scalar(0, 200, 0), 3, 4);
 	}
 
+	int i = 0;
 	for (const auto& e : this->key_x) {
-		cout << e << endl;
-		cv::circle(frame, cv::Point(e, this->key_black_y + 30), 3, cv::Scalar(200, 0, 0), 3, 4);
+		cout << i << "^" << e;
+		cv::circle(frame, cv::Point(e, this->key_black_y + 30), 3, cv::Scalar(255, 255, 0), 3, 4);
+		i += 1;
 	}
 
 	cv::imshow("movie", frame);
@@ -226,8 +231,11 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					cout << "[" << key << ":on]" << endl;
-					this->Register_Event(key);
+					cout << "[" << key << "W:on]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
+
+					this->Register_Event(key,1);
 					key_event[key] = true;
 					
 				}
@@ -237,8 +245,11 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					cout << "[" << key << ":off]" << endl;
-					this->Register_Event(key);
+					cout << "[" << key << "W:off]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0,200, 0), 3, 4);
+					
+					this->Register_Event(key,0);
 					key_event[key] = false;
 				}
 			}
@@ -251,8 +262,9 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					cout << "[" << key << ":on]" << endl;
-					this->Register_Event(key);
+					cout << "[" << key << "B:on]" << endl;
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
+					this->Register_Event(key,1);
 					key_event[key] = true;
 				}
 			}
@@ -261,8 +273,11 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					cout << "[" << key << ":off]" << endl;
-					this->Register_Event(key);
+					cout << "[" << key << "B:off]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 200, 0), 3, 4);
+
+					this->Register_Event(key,0);
 					key_event[key] = false;
 				}
 			}
@@ -290,7 +305,7 @@ int Analysis::Get_Color_r(int x, int y)
 
 bool Analysis::True_White(int n)
 {
-	n += 12;
+	n += 9;
 	int a = n % 12;
 	switch (a)
 	{
@@ -324,7 +339,7 @@ bool Analysis::True_White(int n)
 	}
 }
 
-void Analysis::Register_Event(int key)
+void Analysis::Register_Event(int key,int event)
 {
 
 	//cout << "BBBBBBBBB" << endl;
@@ -334,8 +349,9 @@ void Analysis::Register_Event(int key)
 	std::ostringstream key_;
 	key_ << key;
 
+	str += "-";
+	str += to_string(event);
 	str += key_.str();
-	str += ",";
 	this->active_key_sum++;
 }
 

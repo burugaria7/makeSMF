@@ -8,6 +8,7 @@
 #include<string>
 #include <iostream>
 #include <sstream>
+#include <algorithm>
 
 
 #include <opencv2/opencv.hpp>
@@ -40,7 +41,7 @@ class Analysis
 		int key_black_x[36];
 		int key_black_y;
 
-		int key_x[89];
+		int key_x[88];
 
 
 		//‰æ–Ê•ÏX‚Ì‚Ì‚²ŒŸ’m‘Îô
@@ -100,7 +101,7 @@ class Analysis
 
 		bool True_White(int n);
 
-		void Register_Event(int key);
+		void Register_Event(int key, int event);
 
 		void Output_txt();
 
