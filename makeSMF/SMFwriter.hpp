@@ -23,6 +23,8 @@ public:
 	SMFwriter();
 
 	void Regist_Head();
+	void Note_On(double time,int key);
+	void Note_Off(double time, int key);
 	void Test();
 
 };
