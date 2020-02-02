@@ -32,6 +32,14 @@ void SMFwriter::Regist_Head()
 
 }
 
+void SMFwriter::Note_On(double time, int key)
+{
+}
+
+void SMFwriter::Note_Off(double time, int key)
+{
+}
+
 void SMFwriter::Test()
 {
 	fstream fs;
