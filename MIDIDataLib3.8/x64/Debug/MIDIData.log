@@ -1,0 +1,550 @@
+﻿  MIDIData.c
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2497,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2502,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2505,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2509,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2514,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2519,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2523,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2526,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2527,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2532,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2537,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2541,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2546,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2553,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2560,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2564,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2486,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2489,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2497,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2502,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2505,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2509,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2514,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2519,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2523,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2587,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2590,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2603,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2607,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2609,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2614,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2618,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2620,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2649,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2652,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2664,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2677,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2682,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2687,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2691,1): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(205): message : 'wcsncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2696,1): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(205): message : 'wcsncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2702,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2740,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2764,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2766,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2770,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2772,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2776,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2780,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2787,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2789,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2796,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2798,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2802,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2730,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2733,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2763,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2769,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2786,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2795,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2835,30): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2847,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2852,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2857,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2862,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2867,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2872,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2879,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2886,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2891,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2825,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2828,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2846,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2851,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2866,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2871,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(2890,1): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1015): message : 'wcstombs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4010,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4021,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4024,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4029,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4033,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4040,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4045,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4048,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4057,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4060,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4065,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4068,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4072,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4078,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4081,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4090,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4097,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4105,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4108,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4111,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4115,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4120,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4125,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4136,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4139,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4147,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4154,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4159,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4164,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4168,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4179,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4182,1): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961): message : '_snprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4201,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4212,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4215,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4220,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4224,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4231,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4236,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4239,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4248,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4251,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4256,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4259,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4263,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4269,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4272,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4281,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4288,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4296,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4299,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4302,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4306,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4311,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4316,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4327,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4330,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4338,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4345,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4350,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4355,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4359,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4370,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(4373,1): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667): message : '_snwprintf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8200,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8336,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8562,19): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8591,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8623,48): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8577,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8584,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8614,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8617,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8620,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8664,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8696,48): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8650,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8657,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8687,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8690,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8693,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8839,16): warning C4477: 'sscanf' : 書式文字列 '%X' には、型 'unsigned int *' の引数が必要ですが、可変個引数 1 は型 'unsigned char *' です
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8839,16): message : 書式文字列に '%hhX' を使用することをお勧めします
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8866,69): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8867,69): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8875,49): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8882,47): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8893,49): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8900,47): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8741,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8752,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8806,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8824,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8839,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8862,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9045,16): warning C4477: 'sscanf' : 書式文字列 '%X' には、型 'unsigned int *' の引数が必要ですが、可変個引数 1 は型 'unsigned char *' です
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9045,16): message : 書式文字列に '%hhX' を使用することをお勧めします
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9072,69): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9073,69): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9081,49): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9088,47): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9099,49): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9106,47): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8947,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(8958,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9012,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9030,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9045,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9068,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : 'sscanf' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9132,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9188,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9257,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9261,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9265,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9269,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9273,35): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9277,39): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9281,49): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9285,49): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9289,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9293,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9297,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9301,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9312,67): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9313,67): warning C4312: '型キャスト': 'long' からより大きいサイズの 'MIDIEvent *' へ変換します。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9354,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9358,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9362,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9368,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9372,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9376,45): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9380,41): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9384,43): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9388,46): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9392,41): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9396,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9400,45): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9404,41): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9408,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9412,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9416,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9420,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9424,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9428,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9433,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9437,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9441,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9445,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9512,48): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9519,46): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9528,48): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9535,46): warning C4311: '型キャスト': ポインターを 'tagMIDIEvent *' から 'long' へ切り詰めます。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9576,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9581,38): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9586,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9591,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9614,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9619,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9624,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9629,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9635,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9640,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9645,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9650,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9571,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9729,36): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9734,38): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9739,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9744,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9767,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9772,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9777,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9782,42): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9788,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9793,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9798,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9803,40): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9724,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9859,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9863,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9867,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9871,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9875,52): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9880,68): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9886,80): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9891,80): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9895,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9899,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9903,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9907,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9919,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9923,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9927,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9931,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9935,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9939,61): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9943,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9947,59): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9951,62): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9955,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9959,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9963,61): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9967,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9971,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9975,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9979,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9983,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9987,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9991,58): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9995,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(9999,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10003,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10007,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10033,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10038,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10043,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10048,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10053,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10058,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10063,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10068,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10073,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10078,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10083,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10088,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10027,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10118,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10123,54): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10128,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10133,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10138,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10143,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10148,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10153,57): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10158,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10163,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10168,53): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10173,56): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10112,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10628,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(10846,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11117,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11089,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11217,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11154,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11784,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11906,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11800,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11833,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11867,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(11901,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12005,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12095,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12102,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12417,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12424,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 'strcpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12808,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12913,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12924,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12935,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12946,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12957,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12968,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12979,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(12787,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13288,37): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13393,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13404,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13415,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13426,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13437,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13448,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13459,69): warning C4267: '関数': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13267,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13903,48): warning C4474: 'fprintf': 書式文字列に渡された引数の数が多すぎます
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13903,48): message : プレースホルダーとそのパラメーターには 4 の可変個引数が必要ですが、5 が指定されています。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13908,48): warning C4474: 'fprintf': 書式文字列に渡された引数の数が多すぎます
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13908,48): message : プレースホルダーとそのパラメーターには 4 の可変個引数が必要ですが、5 が指定されています。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(13951,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14014,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14078,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14081,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14119,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14169,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14231,1): warning C4267: '初期化中': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14236,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14241,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14247,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14255,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : 'strncpy' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14492,23): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14605,72): warning C4244: '関数': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14628,79): warning C4244: '関数': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14646,79): warning C4244: '関数': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14852,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14924,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15001,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(14998,1): warning C4090: '初期化中': 異なる 'const' 修飾子です。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15239,25): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15252,24): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15258,22): warning C4244: 'return': '__int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15039,1): warning C4090: '初期化中': 異なる 'const' 修飾子です。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15269,29): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15276,31): warning C4267: '=': 'size_t' から 'long' に変換しました。データが失われているかもしれません。
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15275,1): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(927): message : 'mbstowcs' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15309,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 'fopen' の宣言を確認してください
+C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\MIDIData.c(15369,1): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(130): message : '_wfopen' の宣言を確認してください
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1267,5): warning MSB8012: TargetPath(C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\x64\Debug\MIDIData.dll) does not match the Linker's OutputFile property value (C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\Debug\MIDIDatad.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1269,5): warning MSB8012: TargetName(MIDIData) does not match the Linker's OutputFile property value (MIDIDatad). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     ライブラリ .\Debug/MIDIDatad.lib とオブジェクト .\Debug/MIDIDatad.exp を作成中
+  MIDIData.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\MIDIDataLib3.8\x64\Debug\MIDIData.dll

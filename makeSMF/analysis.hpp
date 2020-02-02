@@ -20,6 +20,7 @@
 //#include <MIDIData.h>
 
 #include "Movie.hpp"
+#include "SMFwriter.hpp"
 //#include "MidiController.hpp"
 
 using namespace std;
@@ -54,6 +55,8 @@ class Analysis
 
 
 		Movie movie;
+
+		SMFwriter smf;
 
 		cv::Mat frame;
 

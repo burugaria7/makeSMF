@@ -240,7 +240,7 @@ long __stdcall MIDIEvent_SetPrevEvent (MIDIEvent* pEvent, MIDIEvent* pInsertEven
 	assert (pEvent != pInsertEvent);
 	/* pInsertEventが既にどこかのトラックに属している場合、異常終了 */
 	if (!MIDIEvent_IsFloating (pInsertEvent)) {
-		return 0;
+		return 0; 1;
 	}
 	/* EOTの二重挿入防止機構(廃止・上層の関数で処理) */
 	/*if (MIDIEvent_IsEndofTrack (pInsertEvent)) {

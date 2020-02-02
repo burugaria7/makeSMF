@@ -22,7 +22,7 @@ Analysis::Analysis()
 void Analysis::Set_Coodinates()
 {
 
-	#define YY 10;
+	#define YY 0;
 
 	cout << "Set_Coodinates() 座標セット関数" << endl;
 
@@ -155,6 +155,7 @@ void Analysis::Analyze()
 
 	//最後にファイルに書き出し
 	this->Output_txt();
+	smf.Test();
 }
 
 void Analysis::Check_Coodinates()
