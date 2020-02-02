@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_a56468
+﻿  SMFwriter.cpp
+  makeSMF.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe
+=======
 ﻿MidiController.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl smf::MidiFile::MidiFile(void)" (??0MidiFile@smf@@QEAA@XZ) が関数 "public: __cdecl MidiController::MidiController(void)" (??0MidiController@@QEAA@XZ) で参照されました。
 MidiController.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl smf::MidiFile::~MidiFile(void)" (??1MidiFile@smf@@QEAA@XZ) が関数 "int `public: __cdecl MidiController::MidiController(void)'::`1'::dtor$0" (?dtor$0@?0???0MidiController@@QEAA@XZ@4HA) で参照されました。
 MidiController.obj : error LNK2019: 未解決の外部シンボル "public: bool __cdecl smf::MidiFile::write(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?write@MidiFile@smf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) が関数 "public: __cdecl MidiController::~MidiController(void)" (??1MidiController@@QEAA@XZ) で参照されました。
@@ -9,3 +13,4 @@ MidiController.obj : error LNK2019: 未解決の外部シンボル "public: clas
 MidiController.obj : error LNK2019: 未解決の外部シンボル "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class smf::MidiFile &)" (??6@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV01@AEAVMidiFile@smf@@@Z) が関数 "public: __cdecl MidiController::~MidiController(void)" (??1MidiController@@QEAA@XZ) で参照されました。
 C:\Users\Retasu\Documents\Github\makeSMF\midifile-master\visual-studio\DebugLib\midifile.lib : warning LNK4272: ライブラリのコンピューターの種類 'x86' がターゲットのコンピューターの種類' x64' と競合しています
 C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe : fatal error LNK1120: 9 件の未解決の外部参照
+>>>>>>> .merge_file_a09832

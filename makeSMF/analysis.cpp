@@ -22,6 +22,8 @@ Analysis::Analysis()
 void Analysis::Set_Coodinates()
 {
 
+	#define YY 0;
+
 	cout << "Set_Coodinates() 座標セット関数" << endl;
 
 	//720p 88key
@@ -31,7 +33,7 @@ void Analysis::Set_Coodinates()
 
 		//white
 
-		this->key_white_y = 665;
+		this->key_white_y = 665-YY;
 
 		for (int i = 0; i < 52; i++) {
 			this->key_white_x[i] = (24.5 / 2.0) + i * 24.6;
@@ -39,14 +41,14 @@ void Analysis::Set_Coodinates()
 
 		//black
 
-		this->key_black_y = 620;
+		this->key_black_y = 620-YY;
 
-		this->key_black_x[0] = 27;
+		this->key_black_x[0] = 28.5;
 
 		int k = 0;
 		int def = 27;
-		#define W_1 43;
-		#define W_2 29;
+		#define W_1 43.2;
+		#define W_2 29.3;
 		for (int i = 1; i < 36; i++) {
 			switch (k){
 			case 0:
@@ -74,18 +76,24 @@ void Analysis::Set_Coodinates()
 	int num = 0;
 	int white = 0;
 	int black = 0;
-	for (;num < 89;num++) {
+	for (;num < 88;num++) {
 		if (this->True_White(num)) {
 			key_x[num] = key_white_x[white];
 			white++;
-			cout << "white" << endl;
+			cout << num <<"w";
 		}
 		else {
 			key_x[num] = key_black_x[black];
 			black++;
-			cout << "black" << endl;
+			cout << num<< "b";
 		}
 	}
+
+	cout << "" << endl;
+
+	sort(key_x, key_x + 88);
+
+
 
 	this->Check_Coodinates();
 }
@@ -110,15 +118,44 @@ void Analysis::Set_Color()
 void Analysis::Analyze()
 {
 
-	double fps = movie.Get_FPS();
+	const static double fps = movie.Get_FPS();
+
+	int frame_count = 1;
 
 	for (;;frame = movie.Get_Next_Frame()) {
+		
 		if (frame.empty()) break;
-		this->Check_Key();
-		this->f_count++;
+
+		this->Check_Key();//ここでキーイベントをアップデート
+
+		double time_now =((double)frame_count / fps);
+
+		//同時発音数が一定以下でイベント本登録
+		if (str.size() > 0&&str.size() < 30) { 
+
+			cout << std::to_string(time_now) << endl;
+
+			this->str_ += std::to_string(time_now);
+			this->str_ += "ms";
+			this->str_ += str;
+			this->str_ += "\n";
+			//cout << str.size() << endl;;
+		}
+
+		str = "";
+
+		frame_count++;
+		this->first_key = 0;
+		this->active_key_sum = 0;
 		cv::imshow("movie", frame);
-		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
+
+		//ここのコメントアウトはずすと動画速度になる
+		//if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
+
+	//最後にファイルに書き出し
+	this->Output_txt();
+	smf.Test();
 }
 
 void Analysis::Check_Coodinates()
@@ -142,9 +179,11 @@ void Analysis::Check_Coodinates()
 		cv::circle(frame, cv::Point(e, this->key_black_y), 3, cv::Scalar(0, 200, 0), 3, 4);
 	}
 
+	int i = 0;
 	for (const auto& e : this->key_x) {
-		cout << e << endl;
-		cv::circle(frame, cv::Point(e, this->key_black_y + 30), 3, cv::Scalar(200, 0, 0), 3, 4);
+		cout << i << "^" << e;
+		cv::circle(frame, cv::Point(e, this->key_black_y + 30), 3, cv::Scalar(255, 255, 0), 3, 4);
+		i += 1;
 	}
 
 	cv::imshow("movie", frame);
@@ -158,7 +197,7 @@ bool Analysis::Change_Color_w(int b, int g, int r)
 		+ abs(g - def_w_clrG)
 		+ abs(r - def_w_clrR);
 
-	if (diff > 50) { //ここの値は調整してね
+	if (diff > threshold) { 
 		return true;//色が変わってるね！
 	}else{
 		return false;
@@ -172,7 +211,7 @@ bool Analysis::Change_Color_b(int b, int g, int r)
 		+ abs(g - def_b_clrG)
 		+ abs(r - def_b_clrR);
 
-	if (diff > 50) { //ここの値は調整してね
+	if (diff > threshold) { 
 		return true;//色が変わってるね！
 	}
 	else {
@@ -184,7 +223,6 @@ void Analysis::Check_Key()
 {
 
 	int x, y, key;
-	int time = 0;
 
 	for (key = 0; key < 88; key++) {
 		x = key_x[key];
@@ -196,9 +234,13 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					Mid.noteOn(time,key);
-					cout << key << " on" << endl;
+					cout << "[" << key << "W:on]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
+
+					this->Register_Event(key,1);
 					key_event[key] = true;
+					
 				}
 			}
 			else {
@@ -206,8 +248,11 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					Mid.noteOff(time, key);
-					cout << key << " off" << endl;
+					cout << "[" << key << "W:off]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0,200, 0), 3, 4);
+					
+					this->Register_Event(key,0);
 					key_event[key] = false;
 				}
 			}
@@ -220,8 +265,9 @@ void Analysis::Check_Key()
 					Get_Color_g(x, y),
 					Get_Color_r(x, y)))
 				{
-					Mid.noteOn(time, key);
-					cout << key << " on" << endl;
+					cout << "[" << key << "B:on]" << endl;
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
+					this->Register_Event(key,1);
 					key_event[key] = true;
 				}
 			}
@@ -230,8 +276,11 @@ void Analysis::Check_Key()
 					Get_Color_b(x, y),
 					Get_Color_g(x, y),
 					Get_Color_r(x, y))) {
-					Mid.noteOff(time, key);
-					cout << key << " off" << endl;
+					cout << "[" << key << "B:off]" << endl;
+
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 200, 0), 3, 4);
+
+					this->Register_Event(key,0);
 					key_event[key] = false;
 				}
 			}
@@ -259,7 +308,7 @@ int Analysis::Get_Color_r(int x, int y)
 
 bool Analysis::True_White(int n)
 {
-	n += 12;
+	n += 9;
 	int a = n % 12;
 	switch (a)
 	{
@@ -292,3 +341,27 @@ bool Analysis::True_White(int n)
 		break;
 	}
 }
+
+void Analysis::Register_Event(int key,int event)
+{
+
+	//cout << "BBBBBBBBB" << endl;
+	//cout << "Register_Event呼び出し" << endl;
+
+
+	std::ostringstream key_;
+	key_ << key;
+
+	str += "-";
+	str += to_string(event);
+	str += key_.str();
+	this->active_key_sum++;
+}
+
+void Analysis::Output_txt()
+{
+	ofstream outputfile("output.txt");
+	outputfile << str_;
+	outputfile.close();
+}
+
