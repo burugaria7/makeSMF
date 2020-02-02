@@ -34,6 +34,11 @@ void SMFwriter::Regist_Head()
 
 void SMFwriter::Note_On(double time, int key)
 {
+	int delta = time_record - time;
+
+
+	//ŽŸ‚ÌŒvŽZ—p‚É•Û‘¶‚µ‚Ä‚¨‚­
+	time_record = time; 
 }
 
 void SMFwriter::Note_Off(double time, int key)
