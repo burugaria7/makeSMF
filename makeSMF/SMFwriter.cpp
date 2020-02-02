@@ -27,8 +27,10 @@ void SMFwriter::Regist_Head()
 	header_chunk.push_back(0x01);
 	
 	//時間単位
-	header_chunk.push_back(0x01);
-	header_chunk.push_back(0xE0);
+	//以下の設定でトラックを
+	//トラックをミリセカンド・ベースにできるらしい
+	header_chunk.push_back(0xE2);
+	header_chunk.push_back(0x50);
 
 }
 
@@ -55,10 +57,17 @@ void SMFwriter::Test()
 	}
 
 
-	int n = 0x98;
-	// int型 sizeof n バイト (通常4バイト) の領域の先頭
-	// アドレス &n を write の引数 const char* にキャスト
-	fs.write((const char*)&n, sizeof n);
+	//int n = 0x90;
+	//// int型 sizeof n バイト (通常4バイト) の領域の先頭
+	//// アドレス &n を write の引数 const char* にキャスト
+	//fs.write((const char*)&n, sizeof n);
+
+	this->Regist_Head();
+	for (auto i : this->header_chunk) {
+		fs.write((const char*)&i, 1);
+		
+	}
+
 
 	fs.close();
 	return;

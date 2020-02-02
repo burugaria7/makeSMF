@@ -27,5 +27,13 @@ public:
 	void Note_Off(double time, int key);
 	void Test();
 
+	template<class... A> int sum(A... args) {
+		int s = 0;
+		for (int i : std::initializer_list<int>{ args... }) {
+			s += i;
+		}
+		return s;
+	}
+
 };
 
