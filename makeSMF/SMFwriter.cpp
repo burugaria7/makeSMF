@@ -85,13 +85,13 @@ void SMFwriter::Test()
 	return;
 }
 
-int SMFwriter::VLQ_Converter(long time)
+vector<long> SMFwriter::VLQ_Converter(long time)
 {
 
 
-	cout << "入力は、" << time << "(10)" << endl;
+	//cout << "入力は、" << time << "(10)" << endl;
 
-	cout << "入力は、0x" << hex << time << "(16)" << endl;
+	//cout << "入力は、0x" << hex << time << "(16)" << endl;
 
 	std::stringstream ss;
 
@@ -103,33 +103,43 @@ int SMFwriter::VLQ_Converter(long time)
 	string s;
 	s = ss.str();
 
-	int t = 18897;
-	cout << "2進数文字列に変換" << s << endl;
+	vector<long> n_long;
 
-	int n;
+	//cout << "2進数文字列に変換" << s << endl;
+
 	string s_;
 
 	if (s.size() > 7) {
 		//n = stoi("0" + s.substr(s.size() - 8, 7));
 		s_ = "0" + s.substr(s.size() - 7, 7);
+		n_long.push_back(binToUInt(s_));
 		s.erase(s.size() - 7, 7);
 	}
 	else {
 		s_ = s;
+		n_long.push_back(binToUInt(s_));
 	}
 
 
 	while (s.size() > 7) {
 
-		s_ = "1" + s.substr(s.size() - 7, 7) + s_;
+		s_ = "1" + s.substr(s.size() - 7, 7);
+		n_long.push_back(binToUInt(s_));
 		s.erase(s.size()-7, 7);
 		
 	}
 
 
-	cout << "２進数フラグ付きに変換 cout " << s_ << endl;
+	//cout << "２進数フラグ付きに変換 cout " << s_ << endl;
 
-	//int n = std::atoi(s.c_str());
+	std::reverse(n_long.begin(), n_long.end());
 
-	return 0;
+	//for (auto i : n_long) {
+	//	cout << "HEX" << hex << i << endl;
+	//}
+
+	
+	return n_long;
 }
+
+

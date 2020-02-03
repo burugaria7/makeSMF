@@ -38,8 +38,24 @@ public:
 	void Test();
 
 
-	int VLQ_Converter(long time);
+	vector<long> VLQ_Converter(long time);
 
+	unsigned int binToUInt(const std::string& str)
+	{
+		//cout << "STRRR" << str << endl;
+		unsigned int val = 0;
+		for (int i = 0; i < (int)str.size(); ++i) {
+			switch (str[i]) {
+			case '0':
+				val *= 2;
+				break;
+			case '1':
+				val = val * 2 + 1;
+				break;
+			}
+		}
+		return val;
+	}
 
 };
 
