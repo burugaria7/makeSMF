@@ -1,4 +1,4 @@
 ﻿  SMFwriter.cpp
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(37,12): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(41,16): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(39,12): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(45,16): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
   makeSMF.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe

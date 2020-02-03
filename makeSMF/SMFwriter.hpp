@@ -4,6 +4,13 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
+#include <stdarg.h>
+#include <sstream> // std::stringstream
+#include <bitset>  // std::bitset<N>
+#include <stdlib.h>
+#include <string>
+#include <cstdlib>
+
 using namespace std;
 
 class SMFwriter
@@ -18,6 +25,9 @@ private:
 	//デルタタイム計算用
 	int time_record = 0;
 
+	//実データのデータ長計測
+	int track_sum = 0;
+
 
 public:
 	SMFwriter();
@@ -27,13 +37,9 @@ public:
 	void Note_Off(double time, int key);
 	void Test();
 
-	template<class... A> int sum(A... args) {
-		int s = 0;
-		for (int i : std::initializer_list<int>{ args... }) {
-			s += i;
-		}
-		return s;
-	}
+
+	int VLQ_Converter(long time);
+
 
 };
 
