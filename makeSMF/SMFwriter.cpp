@@ -75,7 +75,7 @@ void SMFwriter::Test()
 
 	//Variable-length quantity 可変長数値表現のテスト＾
 
-	VLQ_Converter(0x80000000);
+	VLQ_Converter(0x08000000);
 	
 
 
@@ -107,20 +107,27 @@ int SMFwriter::VLQ_Converter(long time)
 	cout << "2進数文字列に変換" << s << endl;
 
 	int n;
+	string s_;
+
+	if (s.size() > 7) {
+		//n = stoi("0" + s.substr(s.size() - 8, 7));
+		s_ = "0" + s.substr(s.size() - 7, 7);
+		s.erase(s.size() - 7, 7);
+	}
+	else {
+		s_ = s;
+	}
+
 
 	while (s.size() > 7) {
 
-		if (s.size() < 8) {
-			n = atoi(s.c_str());
-		}
-		else {
-			n = stoi("1" + s.substr(s.size() - 8, 7));
-			s.erase(s.size()-8, 7);
-		}
-
-		cout << "２進数フラグ付きに変換" << n << endl;
+		s_ = "1" + s.substr(s.size() - 7, 7) + s_;
+		s.erase(s.size()-7, 7);
+		
 	}
 
+
+	cout << "２進数フラグ付きに変換 cout " << s_ << endl;
 
 	//int n = std::atoi(s.c_str());
 
