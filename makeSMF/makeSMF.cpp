@@ -2,6 +2,9 @@
 #include <opencv2/highgui.hpp>
 #include <iostream>
 #include <string> 
+#include <stdio.h>  /* printf */
+#include <stdlib.h>  /* system */
+
 
 #include "Analysis.hpp";
 

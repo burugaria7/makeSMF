@@ -1,4 +1,5 @@
-﻿  SMFwriter.cpp
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(39,12): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\SMFwriter.cpp(45,16): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+﻿  Movie.cpp
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.hpp(32,18): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.cpp(25,28): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Retasu\Documents\Github\makeSMF\makeSMF\Movie.cpp(26,27): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
   makeSMF.vcxproj -> C:\Users\Retasu\Documents\Github\makeSMF\x64\Debug\makeSMF.exe

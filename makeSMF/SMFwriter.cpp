@@ -75,7 +75,7 @@ void SMFwriter::Test()
 
 	//Variable-length quantity 可変長数値表現のテスト＾
 
-	VLQ_Converter(0x08000000);
+	VLQ_Converter(00004000);
 	
 
 
@@ -105,7 +105,7 @@ vector<long> SMFwriter::VLQ_Converter(long time)
 
 	vector<long> n_long;
 
-	//cout << "2進数文字列に変換" << s << endl;
+	cout << "2進数文字列に変換" << s << endl;
 
 	string s_;
 
@@ -134,9 +134,9 @@ vector<long> SMFwriter::VLQ_Converter(long time)
 
 	std::reverse(n_long.begin(), n_long.end());
 
-	//for (auto i : n_long) {
-	//	cout << "HEX" << hex << i << endl;
-	//}
+	for (auto i : n_long) {
+		cout << "HEX" << hex << i << endl;
+	}
 
 	
 	return n_long;

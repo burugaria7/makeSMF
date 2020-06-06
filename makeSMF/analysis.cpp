@@ -150,7 +150,7 @@ void Analysis::Analyze()
 		cv::imshow("movie", frame);
 
 		//ここのコメントアウトはずすと動画速度になる
-		//if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
+		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
 
 	//最後にファイルに書き出し
