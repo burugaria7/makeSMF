@@ -1,19 +1,13 @@
-#include "Analysis.hpp"
+ï»¿#include "Analysis.hpp"
 
 
 Analysis::Analysis()
 {
 
-	cout << "AnalysisƒRƒ“ƒXƒgƒ‰ƒNƒ^ŒÄ‚Ño‚µ" << endl;
+	cout << "Analysisã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿å‘¼ã³å‡ºã—" << endl;
 	this->Set_Coodinates();
 	this->Set_Color();
 
-	for (int i = 0; i < 52; i++) {
-		this->key_w_event[i] = false;
-	}
-	for (int i = 0; i < 36; i++) {
-		this->key_b_event[i] = false;
-	}
 	for (int i = 0; i < 88; i++) {
 		this->key_event[i] = false;
 	}
@@ -22,85 +16,98 @@ Analysis::Analysis()
 void Analysis::Set_Coodinates()
 {
 
-	#define YY 0;
+	//ã“ã“ã«éµç›¤ã‚’æ¢ã™å‡¦ç†ã‚’æ›¸ã
+	/*bool mikke = true;
+	while (mikke) {
 
-	cout << "Set_Coodinates() À•WƒZƒbƒgŠÖ”" << endl;
+	}*/
 
-	//720p 88key
-	if (movie.Get_Set().Get_Mode() == 2) {
+	frame = movie.Get_Next_Frame();
 
-		cout << "Mode = 720p 88 key" << endl;
 
-		//white
 
-		this->key_white_y = 665-YY;
+	cv::Mat gray_img;
+	// ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã«å¤‰æ›ã™ã‚‹
+	cvtColor(frame, gray_img, cv::COLOR_BGR2GRAY);
 
-		for (int i = 0; i < 52; i++) {
-			this->key_white_x[i] = (24.5 / 2.0) + i * 24.6;
+	// ç”»åƒã‚’å¹³æ»‘åŒ–ã™ã‚‹
+	double sigmaX = 1.0;
+	double sigmaY = 1.0;
+	UMat destination;
+	GaussianBlur(gray_img, destination, Size(5, 5), sigmaX, sigmaY);
+
+	cv::Mat canny_img;
+	cv::Canny(destination, canny_img, 50, 110);
+
+	//cv::Mat img_(2, 1, CV_8UC3), canny_img;
+	//cv::Mat img_;
+
+	int length = this->movie.Get_Width();
+
+	int tate = 600;
+
+	//int r_ = this->Get_Color_r(0, tate, img_);
+	//int g_ = this->Get_Color_g(0, tate, img_);
+	//int b_ = this->Get_Color_b(0, tate, img_);
+	int wb = this->Get_WB(0, tate, canny_img);
+
+	vector<int> xxx;
+
+	for (int i = 1; i < canny_img.cols; i++) {
+		//cv::circle(frame, cv::Point(i, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
+		/*int rr = this->Get_Color_r(i, tate, img_);
+		int gg = this->Get_Color_g(i, tate, img_);
+		int bb = this->Get_Color_b(i, tate, img_);*/
+		int wb_ = this->Get_WB(i, tate, canny_img);
+		cout << "WB:" << wb << " ";
+		//cout << "R;" << rr << "G:" << gg << "B:" << bb << endl;
+
+		//cv::circle(frame, cv::Point(i, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
+
+		if (Change_Color(wb, 0, 0, wb_, 0, 0)) {
+			wb = wb_;
+			xxx.push_back(i);
 		}
 
-		//black
-
-		this->key_black_y = 620-YY;
-
-		this->key_black_x[0] = 28.5;
-
-		int k = 0;
-		int def = 27;
-		#define W_1 43.2;
-		#define W_2 29.3;
-		for (int i = 1; i < 36; i++) {
-			switch (k){
-			case 0:
-				def += W_1;
-				break;
-			case 1:
-				def += W_2;
-				break;
-			case 2:
-				def += W_1;
-				break;
-			case 3:
-				def += W_2;
-				break;
-			case 4:
-				def += W_2;
-				k = -1;
-				break;
-			}
-			k++;
-			this->key_black_x[i] = def;
-		}
 	}
 
-	int num = 0;
-	int white = 0;
-	int black = 0;
-	for (;num < 88;num++) {
-		if (this->True_White(num)) {
-			key_x[num] = key_white_x[white];
-			white++;
-			cout << num <<"w";
+
+	cout << "" << endl;
+
+	int fla = 1;
+	cv::Mat mat_ = frame;
+	cv::circle(mat_, cv::Point(30, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
+
+	for (auto xx : xxx) {
+		cout << "X:" << xx << " ";
+
+		if (fla == 1) {
+			cv::circle(mat_, cv::Point(xx, tate + 10), 3, cv::Scalar(0, 200, 0), 3, 4);
 		}
 		else {
-			key_x[num] = key_black_x[black];
-			black++;
-			cout << num<< "b";
+			cv::circle(mat_, cv::Point(xx, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
 		}
+
+		fla *= -1;
 	}
 
 	cout << "" << endl;
 
-	sort(key_x, key_x + 88);
+
+	//cv::imshow("åº§æ¨™ãƒã‚§ãƒƒã‚¯", canny_img);
+	cv::imshow("åº§æ¨™ãƒã‚§ãƒƒã‚¯", mat_);
+
+	cv::waitKey(0);
+
+	cv::destroyAllWindows();
 
 
-
-	this->Check_Coodinates();
+	//this->Check_Coodinates();
 }
 
 void Analysis::Set_Color()
 {
-	cout << "Set_Color() ƒfƒtƒHƒ‹ƒgƒJƒ‰[æ“¾ŠÖ”" << endl;
+	cout << "Set_Color() ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚«ãƒ©ãƒ¼å–å¾—é–¢æ•°" << endl;
 
 	this->def_w_clrB = frame.at<Vec3b>(key_white_y, key_white_x[0])[0];
 	this->def_w_clrG = frame.at<Vec3b>(key_white_y, key_white_x[0])[1];
@@ -122,16 +129,16 @@ void Analysis::Analyze()
 
 	int frame_count = 1;
 
-	for (;;frame = movie.Get_Next_Frame()) {
-		
+	for (;; frame = movie.Get_Next_Frame()) {
+
 		if (frame.empty()) break;
 
-		this->Check_Key();//‚±‚±‚ÅƒL[ƒCƒxƒ“ƒg‚ğƒAƒbƒvƒf[ƒg
+		this->Check_Key();//ã“ã“ã§ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ
 
-		double time_now =((double)frame_count / fps);
+		double time_now = ((double)frame_count / fps);
 
-		//“¯”­‰¹”‚ªˆê’èˆÈ‰º‚ÅƒCƒxƒ“ƒg–{“o˜^
-		if (str.size() > 0&&str.size() < 30) { 
+		//åŒæ™‚ç™ºéŸ³æ•°ãŒä¸€å®šä»¥ä¸‹ã§ã‚¤ãƒ™ãƒ³ãƒˆæœ¬ç™»éŒ²
+		if (str.size() > 0 && str.size() < 30) {
 
 			cout << std::to_string(time_now) << endl;
 
@@ -149,11 +156,11 @@ void Analysis::Analyze()
 		this->active_key_sum = 0;
 		cv::imshow("movie", frame);
 
-		//‚±‚±‚ÌƒRƒƒ“ƒgƒAƒEƒg‚Í‚¸‚·‚Æ“®‰æ‘¬“x‚É‚È‚é
+		//ã“ã“ã®ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¯ãšã™ã¨å‹•ç”»é€Ÿåº¦ã«ãªã‚‹
 		if ((char)cv::waitKey((int)1000 / fps) >= 0) break;
 	}
 
-	//ÅŒã‚Éƒtƒ@ƒCƒ‹‚É‘‚«o‚µ
+	//æœ€å¾Œã«ãƒ•ã‚¡ã‚¤ãƒ«ã«æ›¸ãå‡ºã—
 	this->Output_txt();
 	smf.Test();
 }
@@ -161,9 +168,9 @@ void Analysis::Analyze()
 void Analysis::Check_Coodinates()
 {
 
-	cout << "Check_Coodinates() À•Wƒ`ƒFƒbƒNŠÖ”" << endl;
+	cout << "Check_Coodinates() åº§æ¨™ãƒã‚§ãƒƒã‚¯é–¢æ•°" << endl;
 
-	cv::namedWindow("movie", cv::WINDOW_AUTOSIZE);
+	//cv::namedWindow("åº§æ¨™ãƒã‚§ãƒƒã‚¯", cv::WINDOW_AUTOSIZE);
 
 	double fps = movie.Get_FPS();
 
@@ -186,9 +193,11 @@ void Analysis::Check_Coodinates()
 		i += 1;
 	}
 
-	cv::imshow("movie", frame);
+	cv::imshow("åº§æ¨™ãƒã‚§ãƒƒã‚¯", frame);
 
 	cv::waitKey(0);
+
+	cv::destroyAllWindows();
 }
 
 bool Analysis::Change_Color_w(int b, int g, int r)
@@ -197,9 +206,10 @@ bool Analysis::Change_Color_w(int b, int g, int r)
 		+ abs(g - def_w_clrG)
 		+ abs(r - def_w_clrR);
 
-	if (diff > threshold) { 
-		return true;//F‚ª•Ï‚í‚Á‚Ä‚é‚ËI
-	}else{
+	if (diff > threshold) {
+		return true;//è‰²ãŒå¤‰ã‚ã£ã¦ã‚‹ã­ï¼
+	}
+	else {
 		return false;
 	}
 }
@@ -211,13 +221,29 @@ bool Analysis::Change_Color_b(int b, int g, int r)
 		+ abs(g - def_b_clrG)
 		+ abs(r - def_b_clrR);
 
-	if (diff > threshold) { 
-		return true;//F‚ª•Ï‚í‚Á‚Ä‚é‚ËI
+	if (diff > threshold) {
+		return true;//è‰²ãŒå¤‰ã‚ã£ã¦ã‚‹ã­ï¼
 	}
 	else {
 		return false;
 	}
 }
+
+bool Analysis::Change_Color(int r, int g, int b, int r_, int g_, int b_)
+{
+	int diff = abs(b - b_)
+		+ abs(g - g_)
+		+ abs(r - r_);
+
+	if (diff > ikiti) {
+		return true;//è‰²ãŒå¤‰ã‚ã£ã¦ã‚‹ã­ï¼
+	}
+	else {
+		return false;
+	}
+
+}
+
 
 void Analysis::Check_Key()
 {
@@ -238,9 +264,9 @@ void Analysis::Check_Key()
 
 					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
 
-					this->Register_Event(key,1);
+					this->Register_Event(key, 1);
 					key_event[key] = true;
-					
+
 				}
 			}
 			else {
@@ -250,9 +276,9 @@ void Analysis::Check_Key()
 					Get_Color_r(x, y))) {
 					cout << "[" << key << "W:off]" << endl;
 
-					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0,200, 0), 3, 4);
-					
-					this->Register_Event(key,0);
+					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 200, 0), 3, 4);
+
+					this->Register_Event(key, 0);
 					key_event[key] = false;
 				}
 			}
@@ -267,7 +293,7 @@ void Analysis::Check_Key()
 				{
 					cout << "[" << key << "B:on]" << endl;
 					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 0, 200), 3, 4);
-					this->Register_Event(key,1);
+					this->Register_Event(key, 1);
 					key_event[key] = true;
 				}
 			}
@@ -280,12 +306,37 @@ void Analysis::Check_Key()
 
 					cv::circle(frame, cv::Point(x, y), 3, cv::Scalar(0, 200, 0), 3, 4);
 
-					this->Register_Event(key,0);
+					this->Register_Event(key, 0);
 					key_event[key] = false;
 				}
 			}
 		}
 	}
+}
+
+
+int Analysis::Get_Color_b(int x, int y, cv::Mat mat)
+{
+	int b = mat.at<Vec3b>(y, x)[0];
+	return b;
+}
+
+int Analysis::Get_Color_g(int x, int y, cv::Mat mat)
+{
+	int g = mat.at<Vec3b>(y, x)[1];
+	return g;
+}
+
+int Analysis::Get_Color_r(int x, int y, cv::Mat mat)
+{
+	int r = mat.at<Vec3b>(y, x)[2];
+	return r;
+}
+
+int Analysis::Get_WB(int x, int y, cv::Mat mat)
+{
+	int wb = mat.at<unsigned char>(y, x);
+	return wb;
 }
 
 int Analysis::Get_Color_b(int x, int y)
@@ -342,11 +393,11 @@ bool Analysis::True_White(int n)
 	}
 }
 
-void Analysis::Register_Event(int key,int event)
+void Analysis::Register_Event(int key, int event)
 {
 
 	//cout << "BBBBBBBBB" << endl;
-	//cout << "Register_EventŒÄ‚Ño‚µ" << endl;
+	//cout << "Register_Eventå‘¼ã³å‡ºã—" << endl;
 
 
 	std::ostringstream key_;
@@ -364,4 +415,3 @@ void Analysis::Output_txt()
 	outputfile << str_;
 	outputfile.close();
 }
-

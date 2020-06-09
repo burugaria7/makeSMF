@@ -30,7 +30,7 @@ class Setting
 
 	public:
 		Setting();
-		Setting(string path,int offset, int resol);
+		Setting(int offset, int resol);
 		~Setting();
 
 		inline string Get_Input_Path() {

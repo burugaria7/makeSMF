@@ -1,31 +1,31 @@
-#include "Movie.hpp"
+ï»¿#include "Movie.hpp"
 
 Movie::Movie()
 {
 
 
 	/*if (!(this->cap.open(this->set.Get_Input_Path()))) {
-		cout << "ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“¸”s" << endl;
+		cout << "ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—" << endl;
 		return;
 	}*/
 
 
-	cout << "‰ğÍ‚µ‚½‚¢ƒtƒ@ƒCƒ‹‚ğD&D‚µ‚ÄƒGƒ“ƒ^[‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢" << endl;
+	cout << "è§£æã—ãŸã„ãƒ•ã‚¡ã‚¤ãƒ«ã‚’D&Dã—ã¦ã‚¨ãƒ³ã‚¿ãƒ¼ã‚’æŠ¼ã—ã¦ãã ã•ã„" << endl;
 	String str;
 	cin >> str;
 
 	if (!(this->cap.open(str))) {
-		cout << "ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“¸”s" << endl;
+		cout << "ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—" << endl;
 		exit(1);
 	}
 
-	
-	//ƒI[ƒvƒ“‚Å‚«‚½‚©‚Ìƒ`ƒFƒbƒNˆ—‘‚¢‚Ä‚Ë
+
+	//ã‚ªãƒ¼ãƒ—ãƒ³ã§ããŸã‹ã®ãƒã‚§ãƒƒã‚¯å‡¦ç†æ›¸ã„ã¦ã­
 	this->set.Set_Prog(cap.get(CAP_PROP_FRAME_WIDTH));
 	this->max_frame = cap.get(CAP_PROP_FRAME_COUNT);
 
-	//‚±‚±‚ÅƒIƒtƒZƒbƒg•ª”ò‚Î‚·
-	for (int i = 0; i < this->Get_FPS()*this->Get_Set().Get_Offset(); i++) {
+	//ã“ã“ã§ã‚ªãƒ•ã‚»ãƒƒãƒˆåˆ†é£›ã°ã™
+	for (int i = 0; i < this->Get_FPS() * this->Get_Set().Get_Offset(); i++) {
 		if (cur_frame_num < max_frame) {
 			cap >> img;
 		}

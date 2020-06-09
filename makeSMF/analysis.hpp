@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #ifndef ANALYSIS_HPP
 #define	ANALYSIS_HPP
@@ -28,85 +28,92 @@ using namespace std;
 class Analysis
 {
 
-	private:
+private:
 
-		//F‚ª‚Ç‚ê‚­‚ç‚¢•Ï‚í‚Á‚½‚ç•Ï‰»‚µ‚½‚Æ
-		//”F¯‚·‚é‚©
-		const static int threshold = 50;
+	//è‰²ãŒã©ã‚Œãã‚‰ã„å¤‰ã‚ã£ãŸã‚‰å¤‰åŒ–ã—ãŸã¨
+	//èªè­˜ã™ã‚‹ã‹
+	const static int threshold = 50;
 
+	int ikiti = 10;
 
-		std::ostringstream pos_msec;
+	std::ostringstream pos_msec;
 
-		int key_white_x[52];
-		int key_white_y;
-		int key_black_x[36];
-		int key_black_y;
+	int key_white_x[52];
+	int key_white_y;
+	int key_black_x[36];
+	int key_black_y;
 
-		int key_x[88];
+	int key_x[88];
 
+	//ç”»é¢å¤‰æ›´ã®æ™‚ã®ã”æ¤œçŸ¥å¯¾ç­–
+	//å¤‰åŒ–é‡ãŒå¤šã™ãã‚‹ã¨ã€
+	//æ›¸ãå‡ºã—ã—ãªã„
+	//ãƒ•ãƒ©ã‚°ã¿ãŸã„ãªä½¿ã„æ–¹
+	int active_key_sum = 0;
 
-		//‰æ–Ê•ÏX‚Ì‚Ì‚²ŒŸ’m‘Îô
-		//•Ï‰»—Ê‚ª‘½‚·‚¬‚é‚ÆA
-		//‘‚«o‚µ‚µ‚È‚¢
-		//ƒtƒ‰ƒO‚İ‚½‚¢‚Èg‚¢•û
-		int active_key_sum = 0;
-
-		int first_key = 0;
-
-
-		Movie movie;
-
-		SMFwriter smf;
-
-		cv::Mat frame;
-
-		int def_w_clrB;
-		int def_w_clrG;
-		int def_w_clrR;
-
-		int def_b_clrB;
-		int def_b_clrG;
-		int def_b_clrR;
-
-		bool key_w_event[52];
-		bool key_b_event[36];
-
-		bool key_event[88];
-
-		bool key_active[88];
-
-		//‚PƒtƒŒ[ƒ€•ª‚ğ•Û
-		string str = "";
-
-		//‚»‚Ì1ƒtƒŒ[ƒ€•ª‚É–â‘è‚ª‚È‚¯‚ê‚ÎA
-		//‘‚«‚İ
-		string str_ = "";
-		
+	int first_key = 0;
 
 
-	public:
-		
-		Analysis();
-		void Set_Coodinates();
-		void Set_Color();
-		void Analyze();
-		void Check_Coodinates();
+	Movie movie;
 
-		//–¾‚ç‚©‚ÉF‚ª•Ï‚í‚Á‚½‚©ƒ`ƒFƒbƒN‚·‚é
-		//–¾‚ç‚©‚ÉF‚ª•Ï‚í‚Á‚Ä‚¢‚½‚çtrue
-		bool Change_Color_w(int b,int g,int r);
-		bool Change_Color_b(int b, int g, int r);
+	SMFwriter smf;
 
-		void Check_Key();
-		int Get_Color_b(int x,int y);
-		int Get_Color_g(int x, int y);
-		int Get_Color_r(int x, int y);
+	cv::Mat frame;
 
-		bool True_White(int n);
+	int def_w_clrB;
+	int def_w_clrG;
+	int def_w_clrR;
 
-		void Register_Event(int key, int event);
+	int def_b_clrB;
+	int def_b_clrG;
+	int def_b_clrR;
 
-		void Output_txt();
+	//bool key_w_event[52];
+	//bool key_b_event[36];
+
+	bool key_event[88];
+
+	bool key_active[88];
+
+	//ï¼‘ãƒ•ãƒ¬ãƒ¼ãƒ åˆ†ã‚’ä¿æŒ
+	string str = "";
+
+	//ãã®1ãƒ•ãƒ¬ãƒ¼ãƒ åˆ†ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€
+	//æ›¸ãè¾¼ã¿
+	string str_ = "";
+
+
+
+public:
+
+	Analysis();
+	void Set_Coodinates();
+	void Set_Color();
+	void Analyze();
+	void Check_Coodinates();
+
+	//æ˜ã‚‰ã‹ã«è‰²ãŒå¤‰ã‚ã£ãŸã‹ãƒã‚§ãƒƒã‚¯ã™ã‚‹
+	//æ˜ã‚‰ã‹ã«è‰²ãŒå¤‰ã‚ã£ã¦ã„ãŸã‚‰true
+	bool Change_Color_w(int b, int g, int r);
+	bool Change_Color_b(int b, int g, int r);
+	bool Change_Color(int r, int g, int b, int r_, int g_, int b_);
+
+	void Check_Key();
+	int Get_Color_b(int x, int y);
+	int Get_Color_g(int x, int y);
+	int Get_Color_r(int x, int y);
+
+	int Get_Color_b(int x, int y, cv::Mat mat);
+	int Get_Color_g(int x, int y, cv::Mat mat);
+	int Get_Color_r(int x, int y, cv::Mat mat);
+
+	int Get_WB(int x, int y, cv::Mat mat);
+
+	bool True_White(int n);
+
+	void Register_Event(int key, int event);
+
+	void Output_txt();
 
 };
 

@@ -158,6 +158,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="analysis.cpp" />
+    <ClCompile Include="Coordinates.cpp" />
     <ClCompile Include="makeSMF.cpp" />
     <ClCompile Include="Movie.cpp" />
     <ClCompile Include="Setting.cpp" />
@@ -165,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="analysis.hpp" />
+    <ClInclude Include="Coordinates.h" />
     <ClInclude Include="Movie.hpp" />
     <ClInclude Include="Setting.hpp" />
     <ClInclude Include="SMFwriter.hpp" />

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 
 #ifndef   MOVIE_HPP
@@ -15,37 +15,40 @@ using namespace std;
 
 class Movie
 {
-	private:
-		VideoCapture cap;//“®‰æ‚ð“Ç‚Ýž‚Þ‚½‚ß‚Ìƒoƒbƒtƒ@
-		Setting set;//Ý’èŠÇ—‚ÌƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX
-		Mat img;//‰æ‘œ—p‚Ìƒoƒbƒtƒ@A“®‰æ‚©‚ç‚PƒtƒŒ[ƒ€‚¸‚ÂŽæ‚èo‚·
-		int max_frame;
-		int cur_frame_num = 0;//Œ»Ý“Ç‚Ýž‚ñ‚Å‚¢‚éƒtƒŒ[ƒ€
+private:
+	VideoCapture cap;//å‹•ç”»ã‚’èª­ã¿è¾¼ã‚€ãŸã‚ã®ãƒãƒƒãƒ•ã‚¡
+	Setting set;//è¨­å®šç®¡ç†ã®ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+	Mat img;//ç”»åƒç”¨ã®ãƒãƒƒãƒ•ã‚¡ã€å‹•ç”»ã‹ã‚‰ï¼‘ãƒ•ãƒ¬ãƒ¼ãƒ ãšã¤å–ã‚Šå‡ºã™
+	int max_frame;
+	int cur_frame_num = 0;//ç¾åœ¨èª­ã¿è¾¼ã‚“ã§ã„ã‚‹ãƒ•ãƒ¬ãƒ¼ãƒ 
 
-	public:
-		Movie();
-		~Movie();
+public:
+	Movie();
+	~Movie();
 
-		Mat Get_Next_Frame();
+	Mat Get_Next_Frame();
 
-		inline int Get_FPS() {
-			return cap.get(CAP_PROP_FPS);
-		}
+	inline int Get_Width() {
+		return cap.get(CAP_PROP_FRAME_WIDTH);
+	}
 
-		inline int Get_Max_Frame() {
-			return this->max_frame;
-		}
+	inline int Get_FPS() {
+		return cap.get(CAP_PROP_FPS);
+	}
 
-		inline int Cur_Frame_Num() {
-			return this->cur_frame_num;
-		}
+	inline int Get_Max_Frame() {
+		return this->max_frame;
+	}
 
-		inline Setting Get_Set() {
-			return set;
-		}
+	inline int Cur_Frame_Num() {
+		return this->cur_frame_num;
+	}
+
+	inline Setting Get_Set() {
+		return set;
+	}
 
 
 };
 
 #endif // MOVIE_HPP
-
