@@ -52,6 +52,8 @@ void Analysis::Set_Coodinates()
 	int wb = this->Get_WB(0, tate, canny_img);
 
 	vector<int> xxx;
+	int buf = 0;
+	int delta_max = -1;
 
 	for (int i = 1; i < canny_img.cols; i++) {
 		//cv::circle(frame, cv::Point(i, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
@@ -66,33 +68,50 @@ void Analysis::Set_Coodinates()
 
 		if (Change_Color(wb, 0, 0, wb_, 0, 0)) {
 			wb = wb_;
+			delta_max = max(delta_max, abs(buf - i));
+			buf = i;
 			xxx.push_back(i);
 		}
 
 	}
 
 
-	cout << "" << endl;
+	cout << "MAX=" << delta_max << endl;
+
+	//ここの値をいじることによって座標の無視される距離を変えることができる
+	delta_max /= 2.0;//
+	vector<int> x_gensen;
+	buf = 0;
+	x_gensen.push_back(xxx[0]);
+
+	//ここでさっきのmax値を基にx座標を厳選、エッジ被り対策
+	for (int i = 1; i < xxx.size(); i++) {
+		if (abs(xxx[i] - buf) > delta_max) {
+			x_gensen.push_back(xxx[i]);
+			buf = xxx[i];
+		}
+	}
+
 
 	int fla = 1;
 	cv::Mat mat_ = frame;
-	cv::circle(mat_, cv::Point(30, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
+	//cv::circle(mat_, cv::Point(30, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
 
-	for (auto xx : xxx) {
+	for (auto xx : x_gensen) {
 		cout << "X:" << xx << " ";
 
 		if (fla == 1) {
-			cv::circle(mat_, cv::Point(xx, tate + 10), 3, cv::Scalar(0, 200, 0), 3, 4);
+			cv::circle(mat_, cv::Point(xx + delta_max, tate + 10), 3, cv::Scalar(0, 200, 0), 3, 4);
 		}
 		else {
-			cv::circle(mat_, cv::Point(xx, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
+			cv::circle(mat_, cv::Point(xx + delta_max, tate), 3, cv::Scalar(200, 0, 0), 3, 4);
 		}
 
 		fla *= -1;
 	}
 
-	cout << "" << endl;
 
+	cout << "" << endl;
 
 	//cv::imshow("座標チェック", canny_img);
 	cv::imshow("座標チェック", mat_);
