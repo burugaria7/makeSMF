@@ -24,6 +24,93 @@ void Analysis::Set_Coodinates()
 
 	frame = movie.Get_Next_Frame();
 
+	int len = this->movie.Get_Width();
+
+	int y = this->movie.Get_Height() / 4.0 * 3;
+
+	cv::Mat buf_ = frame.clone();
+
+	//cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
+	//	cv::Scalar(200, 0, 0), 10, 16);
+
+	//cv::imshow("y座標を指定", buf_);
+
+	cout << "TEST" << endl;
+
+	//int kkk = -1;
+	//while (1) {
+	//	kkk = cv::waitKey(1);
+	//	if (kkk != -1) {
+	//		cout << kkk << endl;
+	//	}
+	//}
+
+	// w 119
+	// s 115
+
+
+
+	bool fl = true;
+	bool fl2 = true;
+
+
+	while (1) {
+
+
+		if (fl || fl2) {
+			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
+				cv::Scalar(200, 0, 0), 10, 16);
+
+			cv::imshow("y座標を指定", buf_);
+			fl2 = false;
+		}
+		else {
+		}
+
+
+		int key = cv::waitKey(1);
+		if (key == 119) {//↑入力
+
+			cout << "TOP" << endl;
+
+			if (y >= 0)y--;
+			cv::Mat buf_ = frame.clone();
+
+			cv::line(buf_, Point(0, y), Point(movie.Get_Width(), y)
+				, (0, 0, 255), 5);
+
+
+			cv::destroyAllWindows();
+			cv::imshow("y座標を指定", buf_);
+			fl = false;
+		}
+		else if (key == 115) {//↓入力
+
+
+			cout << "BOTTOM" << endl;
+
+			if (y <= movie.Get_Height())y++;
+			cv::Mat buf_ = frame.clone();
+
+			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
+				cv::Scalar(200, 0, 0), 10, 16);
+
+			cv::destroyAllWindows();
+			cv::imshow("y座標を指定", buf_);
+			fl = false;
+		}
+		else if (key == 13) {
+			cout << "ENTER" << endl;
+			cv::destroyAllWindows();
+			break;
+		}
+
+
+	}
+
+
+
+	int tate = 600;
 
 
 	cv::Mat gray_img;
@@ -44,7 +131,6 @@ void Analysis::Set_Coodinates()
 
 	int length = this->movie.Get_Width();
 
-	int tate = 600;
 
 	//int r_ = this->Get_Color_r(0, tate, img_);
 	//int g_ = this->Get_Color_g(0, tate, img_);

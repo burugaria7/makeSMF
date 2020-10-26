@@ -32,6 +32,10 @@ public:
 		return cap.get(CAP_PROP_FRAME_WIDTH);
 	}
 
+	inline int Get_Height() {
+		return cap.get(CAP_PROP_FRAME_HEIGHT);
+	}
+
 	inline int Get_FPS() {
 		return cap.get(CAP_PROP_FPS);
 	}

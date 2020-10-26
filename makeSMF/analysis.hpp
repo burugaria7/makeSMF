@@ -24,11 +24,22 @@
 //#include "MidiController.hpp"
 
 using namespace std;
+using namespace cv;
 
 class Analysis
 {
 
 private:
+
+	//マウス入力用のパラメータ
+	struct mouseParam {
+		int x;
+		int y;
+		int event;
+		int flags;
+	};
+
+	mouseParam mouseEvent;
 
 	//色がどれくらい変わったら変化したと
 	//認識するか
@@ -114,6 +125,8 @@ public:
 	void Register_Event(int key, int event);
 
 	void Output_txt();
+
+
 
 };
 
