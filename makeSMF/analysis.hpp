@@ -49,6 +49,8 @@ private:
 
 	std::ostringstream pos_msec;
 
+	vector<int> key_xx;
+
 	int key_white_x[52];
 	int key_white_y;
 	int key_black_x[36];

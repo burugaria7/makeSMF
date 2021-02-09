@@ -59,7 +59,7 @@ void Analysis::Set_Coodinates()
 
 		if (fl || fl2) {
 			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
-				cv::Scalar(200, 0, 0), 10, 16);
+				cv::Scalar(200, 0, 0), 5);
 
 			cv::imshow("y座標を指定", buf_);
 			fl2 = false;
@@ -71,7 +71,7 @@ void Analysis::Set_Coodinates()
 		int key = cv::waitKey(1);
 		if (key == 119) {//↑(W)入力
 
-			cout << "TOP" << endl;
+			cout << "TOP " << y << endl;
 
 			if (y >= 1)y--;
 			cv::Mat buf_ = frame.clone();
@@ -80,28 +80,33 @@ void Analysis::Set_Coodinates()
 				, (0, 0, 255), 5);
 
 
-			cv::destroyAllWindows();
+			//cv::destroyAllWindows();
 			cv::imshow("y座標を指定", buf_);
 			fl = false;
 		}
 		else if (key == 115) {//↓(S)入力
 
 
-			cout << "BOTTOM" << endl;
+			cout << "BOTTOM " << y << endl;
 
 			if (y <= movie.Get_Height() - 1)y++;
 			cv::Mat buf_ = frame.clone();
 
-			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
-				cv::Scalar(200, 0, 0), 10, 16);
+			//			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
+			//				cv::Scalar(200, 0, 0), 10, 16);
 
-			cv::destroyAllWindows();
+			cv::line(buf_, Point(0, y), Point(len, y)
+				, cv::Scalar(200, 0, 0), 5);
+
+			//cv::destroyAllWindows();
 			cv::imshow("y座標を指定", buf_);
 			fl = false;
 		}
 		else if (key == 13) {
 			cout << "ENTER" << endl;
 			cv::destroyAllWindows();
+			this, key_black_y = y;
+			this, key_white_y = y;
 			break;
 		}
 
@@ -193,12 +198,13 @@ void Analysis::Set_Coodinates()
 
 	for (auto xx : x_gensen) {
 		cout << "X:" << xx << " ";
+		this->key_xx.push_back(xx);
 
 		if (fla == 1) {
-			cv::circle(mat_, cv::Point(xx + delta_max, tate + 10), 3, cv::Scalar(0, 200, 0), 3, 4);
+			cv::circle(mat_, cv::Point(xx + delta_max / 2.0, tate + 10), 3, cv::Scalar(0, 200, 0), 3, 4);
 		}
 		else {
-			cv::circle(mat_, cv::Point(xx + delta_max, tate), 3, cv::Scalar(200, 0, 0), 3, 4);
+			cv::circle(mat_, cv::Point(xx + delta_max / 2.0, tate), 3, cv::Scalar(200, 0, 0), 3, 4);
 		}
 
 		fla *= -1;
@@ -222,13 +228,21 @@ void Analysis::Set_Color()
 {
 	cout << "Set_Color() デフォルトカラー取得関数" << endl;
 
-	this->def_w_clrB = frame.at<Vec3b>(key_white_y, key_white_x[0])[0];
-	this->def_w_clrG = frame.at<Vec3b>(key_white_y, key_white_x[0])[1];
-	this->def_w_clrR = frame.at<Vec3b>(key_white_y, key_white_x[0])[2];
+	//this->def_w_clrB = frame.at<Vec3b>(key_white_y, key_white_x[0])[0];
+	//this->def_w_clrG = frame.at<Vec3b>(key_white_y, key_white_x[0])[1];
+	//this->def_w_clrR = frame.at<Vec3b>(key_white_y, key_white_x[0])[2];
 
-	this->def_b_clrB = frame.at<Vec3b>(key_black_y, key_black_x[0])[0];
-	this->def_b_clrG = frame.at<Vec3b>(key_black_y, key_black_x[0])[1];
-	this->def_b_clrR = frame.at<Vec3b>(key_black_y, key_black_x[0])[2];
+	//this->def_b_clrB = frame.at<Vec3b>(key_black_y, key_black_x[0])[0];
+	//this->def_b_clrG = frame.at<Vec3b>(key_black_y, key_black_x[0])[1];
+	//this->def_b_clrR = frame.at<Vec3b>(key_black_y, key_black_x[0])[2];
+
+	this->def_w_clrB = frame.at<Vec3b>(key_white_y, key_xx[0])[0];
+	this->def_w_clrG = frame.at<Vec3b>(key_white_y, key_xx[0])[1];
+	this->def_w_clrR = frame.at<Vec3b>(key_white_y, key_xx[0])[2];
+
+	this->def_b_clrB = frame.at<Vec3b>(key_black_y, key_xx[1])[0];
+	this->def_b_clrG = frame.at<Vec3b>(key_black_y, key_xx[1])[1];
+	this->def_b_clrR = frame.at<Vec3b>(key_black_y, key_xx[1])[2];
 
 	cout << "B:" << def_w_clrB << ",G:" << def_w_clrG << ",R:" << def_w_clrR << endl;
 	cout << "B:" << def_b_clrB << ",G:" << def_b_clrG << ",R:" << def_b_clrR << endl;
