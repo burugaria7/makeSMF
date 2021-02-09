@@ -69,11 +69,11 @@ void Analysis::Set_Coodinates()
 
 
 		int key = cv::waitKey(1);
-		if (key == 119) {//↑入力
+		if (key == 119) {//↑(W)入力
 
 			cout << "TOP" << endl;
 
-			if (y >= 0)y--;
+			if (y >= 1)y--;
 			cv::Mat buf_ = frame.clone();
 
 			cv::line(buf_, Point(0, y), Point(movie.Get_Width(), y)
@@ -84,12 +84,12 @@ void Analysis::Set_Coodinates()
 			cv::imshow("y座標を指定", buf_);
 			fl = false;
 		}
-		else if (key == 115) {//↓入力
+		else if (key == 115) {//↓(S)入力
 
 
 			cout << "BOTTOM" << endl;
 
-			if (y <= movie.Get_Height())y++;
+			if (y <= movie.Get_Height() - 1)y++;
 			cv::Mat buf_ = frame.clone();
 
 			cv::line(buf_, cv::Point(0, y), cv::Point(len, y),
@@ -110,7 +110,7 @@ void Analysis::Set_Coodinates()
 
 
 
-	int tate = 600;
+	int tate = y;
 
 
 	cv::Mat gray_img;
@@ -141,19 +141,25 @@ void Analysis::Set_Coodinates()
 	int buf = 0;
 	int delta_max = -1;
 
+	//0をいれとく。いれないといっちゃん下の鍵盤がないことになっちゃう
+	xxx.push_back(0);
+
 	for (int i = 1; i < canny_img.cols; i++) {
 		//cv::circle(frame, cv::Point(i, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
 		/*int rr = this->Get_Color_r(i, tate, img_);
 		int gg = this->Get_Color_g(i, tate, img_);
 		int bb = this->Get_Color_b(i, tate, img_);*/
 		int wb_ = this->Get_WB(i, tate, canny_img);
-		cout << "WB:" << wb << " ";
+		//cout << "WB:" << wb << " ";
 		//cout << "R;" << rr << "G:" << gg << "B:" << bb << endl;
 
+		//とりあえず認識した鍵盤位置をすべて描写
 		//cv::circle(frame, cv::Point(i, tate), 3, cv::Scalar(0, 200, 0), 3, 4);
 
 		if (Change_Color(wb, 0, 0, wb_, 0, 0)) {
 			wb = wb_;
+
+			//ここで各座標の距離の最大値を計算しておく
 			delta_max = max(delta_max, abs(buf - i));
 			buf = i;
 			xxx.push_back(i);
@@ -161,22 +167,24 @@ void Analysis::Set_Coodinates()
 
 	}
 
-
-	cout << "MAX=" << delta_max << endl;
+	cout << "認識した鍵盤数(エッジ被りあり)" << xxx.size() << endl;
+	cout << "鍵盤間の距離のMAX=" << delta_max << endl;
 
 	//ここの値をいじることによって座標の無視される距離を変えることができる
 	delta_max /= 2.0;//
 	vector<int> x_gensen;
-	buf = 0;
+	buf = xxx[0];
 	x_gensen.push_back(xxx[0]);
 
-	//ここでさっきのmax値を基にx座標を厳選、エッジ被り対策
+	//ここでさっきのdelta_max値を基にx座標を厳選、エッジ被り対策
 	for (int i = 1; i < xxx.size(); i++) {
 		if (abs(xxx[i] - buf) > delta_max) {
 			x_gensen.push_back(xxx[i]);
 			buf = xxx[i];
 		}
 	}
+
+	cout << "添削後の鍵盤数" << x_gensen.size() << endl;
 
 
 	int fla = 1;
