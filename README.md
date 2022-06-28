@@ -6,8 +6,7 @@ Synthesia’s_Movie_To_SMF
 Sythesiaのmidi動画を解析しSMF形式で書き出す
 
 使用言語
-扱える言語がc++かjavaなんだけどjavaはないかなぁ。なのでc++
-GUIなんかしらん、CUIでいいだろ？
+C++
 
 
 動作
